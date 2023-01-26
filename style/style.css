@@ -142,7 +142,7 @@ img {
 }
 
 .animate--shrink.animate .panel {
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
 
 .animate--tilt.animate .panel {
@@ -150,7 +150,7 @@ img {
 }
 
 .animate--tilt2.animate .panel {
-  transform: scale(0.8) rotateX(25deg);
+  transform: scale(0.7) rotateX(25deg) rotateY(-15deg);
 }
 
 .panel[data-x-pos="-2"] {
