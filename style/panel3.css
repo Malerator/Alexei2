@@ -1,0 +1,70 @@
+.panel3__heder {
+  font-weight: 700;
+  font-size: 3vmin;
+  line-height: 4.4vmin;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-color: red;
+  margin-bottom: 5%;
+}
+
+.card__title {
+  flex: 1;
+  font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 7vmin;
+}
+
+.card__item {
+  font-weight: 500;
+  flex: 1;
+  font-size: 3vmin;
+}
+
+.wrap__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 80%;
+  margin-top: 3%;
+  padding: 0 3% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  border-radius: 1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  background-color: inherit;
+  transition: 0.5s;
+}
+
+.card:nth-child(2) {
+  margin-left: 5%;
+}
+.card:nth-child(3) {
+  margin-left: 10%;
+}
+.card:nth-child(4) {
+  margin-left: 15%;
+}
+.card:nth-child(5) {
+  margin-left: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 0.4em 0.2em rgba(14, 13, 13, 1);
+  -webkit-text-fill-color: orangered;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s;
+}
+
+/* начало мобильной версии */
+
+@media (max-width: 425px) {
+  #about {
+    padding: 81px 29px 76px;
+  }
+}

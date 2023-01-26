@@ -1,0 +1,318 @@
+:root {
+  --var-bgcolor: #fff;
+  --var-fontcolor: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --var-bgcolor: #282a2d; */
+    --var-bgcolor: #252831;
+    --var-fontcolor: #eee;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: repeat;
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+  font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  perspective: 1000px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 7vmin;
+  font-weight: 600;
+}
+
+h2 {
+  display: block;
+  margin-bottom: 2%;
+  text-align: start;
+  font-size: 5.5vmin;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.head__focus {
+  color: red;
+}
+
+h3 {
+  font-size: 4vmin;
+  line-height: 1.1;
+  margin: 0 0 2% 0;
+  text-align: right;
+}
+
+h4 {
+  font-size: 6vmin;
+  line-height: 7vmin;
+  text-align: left;
+}
+
+h5 {
+  font-size: 4vmin;
+  text-align: right;
+  /* transform: rotate(4deg); */
+}
+
+h6 {
+  font-size: 4.8vmin;
+  text-align: center;
+  line-height: 1.2;
+}
+
+img {
+  mix-blend-mode: color-burn;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3% 5%;
+  box-sizing: border-box;
+}
+
+.site-wrap {
+  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.site-wrap.show-all {
+  transform: rotateY(20deg) scale(0.2);
+}
+
+.panel-wrap {
+  height: 100vh;
+  width: 100vw;
+}
+
+.panel-wrap {
+  perspective: 2000px;
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panel-wrap.animate--shrink,
+.panel-wrap.animate--tilt,
+.panel-wrap.animate--tilt2 {
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+}
+
+.panel {
+  height: 100vh;
+  position: absolute;
+  align-items: center;
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  width: 100vw;
+  will-change: transform;
+}
+
+.panel:before {
+  background-color: transparent;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.show-all .panel:before {
+  pointer-events: all;
+}
+
+.show-all .panel:hover:before {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.animate--shrink.animate .panel {
+  transform: scale(0.9);
+}
+
+.animate--tilt.animate .panel {
+  transform: scale(0.6) rotateY(-25deg);
+}
+
+.animate--tilt2.animate .panel {
+  transform: scale(0.8) rotateX(25deg);
+}
+
+.panel[data-x-pos="-2"] {
+  left: -200%;
+}
+
+.panel[data-x-pos="-1"] {
+  left: -100%;
+}
+
+.panel[data-x-pos="1"] {
+  left: 100%;
+}
+
+.panel[data-x-pos="2"] {
+  left: 200%;
+}
+
+.panel[data-y-pos="-2"] {
+  top: 200%;
+}
+
+.panel[data-y-pos="-1"] {
+  top: 100%;
+}
+
+.panel[data-y-pos="1"] {
+  top: -100%;
+}
+
+.panel[data-y-pos="2"] {
+  top: -200%;
+}
+
+.panel__zoom {
+  cursor: pointer;
+  right: 1%;
+  opacity: 0.2;
+  position: absolute;
+  top: 19%;
+  transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
+  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  user-select: none;
+}
+
+.panel__zoom:hover {
+  opacity: 1;
+}
+
+.show-all .panel__zoom {
+  pointer-events: none;
+}
+
+.panel__nav {
+  cursor: pointer;
+  opacity: 0.2;
+  position: absolute;
+  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  user-select: none;
+  will-change: opacity;
+}
+
+.panel__nav--up {
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+}
+
+.panel__nav--left {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+}
+
+.panel__nav--left-top {
+  left: 1rem;
+  top: 1rem;
+}
+
+.panel__nav--left-down {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.panel__nav--right {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg) translateX(100%);
+  transform-origin: top right;
+}
+
+.panel__nav--right-top {
+  right: 1rem;
+  top: 1rem;
+}
+
+.panel__nav--right-down {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.panel__nav--down {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.panel__nav:hover {
+  opacity: 1;
+  color: orangered;
+}
+
+.panel__animation-list {
+  font-size: 3.3vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+}
+
+.panel__animation-list span {
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0.2;
+  position: relative;
+  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  user-select: none;
+}
+
+.panel__animation-list span:after {
+  border-bottom: 0.3vmin solid transparent;
+  bottom: 0;
+  content: "";
+  left: -1px;
+  position: absolute;
+  right: 0;
+  transition: border-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  width: 100%;
+}
+
+.panel__animation-list span.active,
+.panel__animation-list span:hover {
+  opacity: 1;
+}
+
+.panel__animation-list span.active:after,
+.panel__animation-list span:hover:after {
+  border-color: white;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy-Bold.ttf") format("truetype"),
+    url("../fonts/gilroy-Bold.woff") format("woff"),
+    url("../fonts/gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/gilroy-Bold.eot?") format("eot");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy-Medium.ttf") format("truetype"),
+    url("../fonts/gilroy-Medium.woff") format("woff"),
+    url("../fonts/gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/gilroy-Medium.eot?") format("eot");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

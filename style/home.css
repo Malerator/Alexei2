@@ -1,0 +1,141 @@
+.home__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15vmin;
+  /* margin-left: 7vmin; */
+}
+
+.home__title {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.home__title-p {
+  font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  align-self: flex-start;
+  font-size: 3.1vmin;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.box__img {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 50vmin;
+  /* border-bottom: 1px solid orangered; */
+  /* border-right: 1px solid orangered; */
+  /* border-radius: 1em; */
+}
+
+.home__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(241, 31, 31));
+  filter: drop-shadow(5px 5px 5px rgb(241, 31, 31));
+}
+
+.btn {
+  position: relative;
+  font-size: 2.5vmin;
+  text-align: center;
+  background-color: inherit;
+  border: 0;
+  border-bottom: 1px solid #000;
+  color: inherit;
+  padding: 4% 11%;
+  border-radius: 1em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0.2em 0.4em 0.2em rgba(14, 13, 13, 0.7);
+  transform: scale(1.05, 1.05);
+  transition: 0.4s;
+}
+
+.btn:before {
+  font-family: "FontAwesome";
+  font-size: 5vmin;
+  content: "\f155";
+  text-align: center;
+  position: absolute;
+  top: 1vmin;
+  left: -3vmin;
+  transition: all 400ms cubic-bezier(0, 0.69, 1, 0.33);
+}
+
+.btn:hover:before {
+  left: 2.6vmin;
+}
+
+.btn_info {
+  font-size: 3vmin;
+}
+
+.fa {
+  font-size: 4vmin;
+  color: orangered;
+}
+
+.fa-clock-o,
+.fa-car,
+.fa-file-text,
+.fa-folder-open,
+.fa-money {
+  font-size: 5vmin;
+  color: rgb(63, 60, 70);
+}
+
+.fa-hand-o-down {
+  margin: 0 auto;
+  color: inherit;
+}
+
+.wrap__bullit {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bullit {
+  margin-top: 3vmin;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vmin;
+  align-items: center;
+}
+
+.bullit__item {
+  display: block;
+  font-size: 3vmin;
+}
+
+/* начало мобильной версии*/
+/* @media (max-width: 425px) {
+  #home {
+    padding: 65px 30px 83px;
+  }
+
+  .home__info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 37px;
+  }
+  .home__info p {
+    align-self: flex-start;
+    padding-bottom: 0;
+  }
+  h1 {
+    margin-bottom: 23px;
+  }
+} */
