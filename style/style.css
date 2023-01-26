@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+* {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
 body {
   background-repeat: repeat;
   background-color: var(--var-bgcolor);
@@ -80,11 +87,11 @@ img {
 }
 
 .site-wrap {
-  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .site-wrap.show-all {
-  transform: rotateY(20deg) scale(0.2);
+  transform: rotateY(15deg) scale(0.2);
 }
 
 .panel-wrap {
@@ -100,7 +107,7 @@ img {
 .panel-wrap.animate--shrink,
 .panel-wrap.animate--tilt,
 .panel-wrap.animate--tilt2 {
-  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0.6s;
 }
 
 .panel {
@@ -185,7 +192,7 @@ img {
   position: absolute;
   top: 19%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
-  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
 }
 
@@ -201,9 +208,9 @@ img {
   cursor: pointer;
   opacity: 0.2;
   position: absolute;
-  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
   will-change: opacity;
+  transition: 0.6s;
 }
 
 .panel__nav--up {
@@ -254,7 +261,9 @@ img {
 
 .panel__nav:hover {
   opacity: 1;
-  color: orangered;
+  color: red;
+  text-shadow: 0 0 3vmin red;
+  transition: 0.3s;
 }
 
 .panel__animation-list {
@@ -270,7 +279,7 @@ img {
   display: inline-block;
   opacity: 0.2;
   position: relative;
-  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
 }
 
@@ -281,7 +290,7 @@ img {
   left: -1px;
   position: absolute;
   right: 0;
-  transition: border-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: border-color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   width: 100%;
 }
 

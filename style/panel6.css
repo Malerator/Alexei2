@@ -7,7 +7,7 @@
 }
 
 .slider {
-  margin-top: 7%;
+  margin-top: 10%;
   padding: 2%;
   box-shadow: 4px 5px 4px rgb(26, 25, 25);
   transition: 0.5s;
@@ -45,12 +45,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 50%;
 }
 
 .slider .item {
   object-fit: center;
-  height: 45vmin;
+  height: 40vmin;
 }
 
 .previous,
@@ -75,7 +74,6 @@
 }
 
 @keyframes fade {
-  /* Устанавливаем и изменяем степень прозрачности: */
   from {
     opacity: 1;
   }
@@ -84,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .item {
     flex-direction: column;
   }
@@ -116,4 +114,4 @@
     transition: 0.5s;
     color: white;
   }
-}
+} */
