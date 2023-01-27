@@ -263,7 +263,7 @@ img {
 .panel__nav:hover {
   opacity: 1;
   color: red;
-  text-shadow: 0 0 3vmin rgb(244, 240, 240);
+  text-shadow: 0 0 3vmin rgb(3, 3, 3);
   transition: 0.3s;
 }
 
