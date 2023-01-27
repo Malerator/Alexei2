@@ -150,7 +150,7 @@ img {
 }
 
 .animate--tilt2.animate .panel {
-  transform: scale(0.7) rotateX(25deg) rotateY(-15deg);
+  transform: scale(0.7) rotateX(35deg) rotateY(-15deg);
 }
 
 .panel[data-x-pos="-2"] {
@@ -188,7 +188,7 @@ img {
 .panel__zoom {
   cursor: pointer;
   right: 1%;
-  opacity: 0.2;
+  opacity: 0.5;
   position: absolute;
   top: 19%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
@@ -206,7 +206,8 @@ img {
 
 .panel__nav {
   cursor: pointer;
-  opacity: 0.2;
+  opacity: 0.5;
+  color: red;
   position: absolute;
   user-select: none;
   will-change: opacity;
@@ -266,24 +267,24 @@ img {
   transition: 0.3s;
 }
 
-.panel__animation-list {
+/* .panel__animation-list {
   font-size: 3.3vmin;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) translateY(14vmin);
-}
+} */
 
-.panel__animation-list span {
+/* .panel__animation-list span {
   cursor: pointer;
   display: inline-block;
   opacity: 0.2;
   position: relative;
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
-}
+} */
 
-.panel__animation-list span:after {
+/* .panel__animation-list span:after {
   border-bottom: 0.3vmin solid transparent;
   bottom: 0;
   content: "";
@@ -302,7 +303,7 @@ img {
 .panel__animation-list span.active:after,
 .panel__animation-list span:hover:after {
   border-color: white;
-}
+} */
 
 @font-face {
   font-family: "Gilroy-Bold";
