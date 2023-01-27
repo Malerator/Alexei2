@@ -1,6 +1,6 @@
 :root {
   --var-bgcolor: rgb(144, 141, 141);
-  --var-fontcolor: #000;
+  --var-fontcolor: rgb(218, 212, 212);
 }
 
 @media (prefers-color-scheme: dark) {
