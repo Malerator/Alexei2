@@ -142,7 +142,7 @@ img {
 }
 
 .animate--shrink.animate .panel {
-  transform: rotateY(-180deg) scale(0.3);
+  transform: scale(0.3);
 }
 
 .animate--tilt.animate .panel {
