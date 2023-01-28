@@ -224,7 +224,7 @@ function setPos() {
     "translateX(" + pos_x + "00%) translateY(" + pos_y + "00%)";
   setTimeout(function () {
     removeClass(wrap, "animate");
-  }, 1500);
+  }, 800);
 }
 
 setPos();
