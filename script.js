@@ -132,7 +132,7 @@ function fixStepIndicator(num) {
   bolProgres[num].className += " active";
 }
 
-/***/ /////////////////////////////////////////////поле сномером тел и инпуты type='range'////////////////////////////////////
+/***/ /////////////////////////////////////////////поле с номером тел и инпуты type='range'////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {
   let input = document.querySelector(".maskphone");
@@ -224,7 +224,7 @@ function setPos() {
     "translateX(" + pos_x + "00%) translateY(" + pos_y + "00%)";
   setTimeout(function () {
     removeClass(wrap, "animate");
-  }, 800);
+  }, 1500);
 }
 
 setPos();
@@ -319,9 +319,9 @@ function zoomIn() {
   removeClass(site, "show-all");
 }
 
-window.addEventListener("mousewheel", function (e) {
-  if (e.ctrlKey) {
-    e.preventDefault();
-    return false;
-  }
-});
+// window.addEventListener("mousewheel", function (e) {
+//   if (e.ctrlKey) {
+//     e.preventDefault();
+//     return false;
+//   }
+// });
