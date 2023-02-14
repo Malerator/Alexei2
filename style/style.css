@@ -34,6 +34,8 @@ body {
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -87,7 +89,6 @@ img {
 .container {
   margin: 0 auto;
   padding: 3% 7%;
-  overflow-y: scroll;
 }
 
 .site-wrap {
@@ -116,7 +117,8 @@ img {
 
 .panel {
   /* height: 100vh; */
-  height: fit-content;
+  /* height: fit-content; */
+  height: 100%;
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
