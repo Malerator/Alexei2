@@ -65,81 +65,105 @@
         <main>
           <!-- главная //////////////////////////////////////////////////////////////////////////////////-->
           <section class="panel" data-x-pos="0" data-y-pos="0">
+            <span class="panel__nav panel__nav--up js-up">вверх</span>
+            <span class="panel__nav panel__nav--right-top js-up js-right"
+              >вверх/вправо</span
+            >
+            <span class="panel__nav panel__nav--left-top js-up js-left"
+              >вверх/влево</span
+            >
+            <span class="panel__nav panel__nav--left js-left">влево</span>
+            <span class="panel__nav panel__nav--right js-right">вправо</span>
+            <span class="panel__nav panel__nav--down js-down">вниз</span>
+            <span class="panel__zoom js-zoom"
+              ><svg
+                viewBox="0 0 33 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="33" height="3.83721" fill="orangered" />
+                <rect y="7.67383" width="33" height="3.83721" fill="red" />
+                <rect y="15.3496" width="33" height="3.83721" fill="red" />
+              </svg>
+            </span>
             <div class="container">
-              <span class="panel__nav panel__nav--up js-up">вверх</span>
-              <span class="panel__nav panel__nav--right-top js-up js-right"
-                >вверх/вправо</span
-              >
-              <span class="panel__nav panel__nav--left-top js-up js-left"
-                >вверх/влево</span
-              >
-              <span class="panel__nav panel__nav--left js-left">влево</span>
-              <span class="panel__nav panel__nav--right js-right">вправо</span>
-              <span class="panel__nav panel__nav--down js-down">вниз</span>
-              <span class="panel__zoom js-zoom"
-                ><svg
-                  width="33"
-                  height="20"
-                  viewBox="0 0 33 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="33" height="3.83721" fill="orangered" />
-                  <rect y="7.67383" width="33" height="3.83721" fill="red" />
-                  <rect y="15.3496" width="33" height="3.83721" fill="red" />
-                </svg>
-              </span>
+              <div class="main__head">
+                <div class="logo__item">
+                  <div class="logo"></div>
+                  <p class="main__logo-text">Выкуп авто в спб и ЛО</p>
+                </div>
+                <div class="connection">
+                  <div>
+                    <a class="tel" href="tel:+79691006855">+7 969 100 68 55</a>
+                    <p class="main__head-text">График работы с 9:00 до 21:00</p>
+                  </div>
+                  <div class="message">
+                    <p class="main__head-text">Написать в мессенджеры</p>
+                    <a href="https://api.whatsapp.com/send/?phone=79691006855"
+                      ><img
+                        src="./images/watsapp.png"
+                        width="28"
+                        height="23"
+                        alt=""
+                    /></a>
+                    <a href=" https://t.me/+79219892203"
+                      ><img
+                        src="./images/tel.png"
+                        width="28"
+                        height="23"
+                        alt=""
+                    /></a>
+                    <a href="viber://contact?number=%2B79691006855"
+                      ><img
+                        src="./images/viber.png"
+                        width="28"
+                        height="23"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
               <div class="home__info">
                 <div class="home__title">
-                  <h1>выкуп авто <br />с комфортом</h1>
-                  <p class="home__title-p">за 2 часа в удобном для вас месте</p>
-                  <p class="btn_info">
-                    рассчитайте точную стоимость <br />
-                    своего авто за одну минуту
+                  <h1>
+                    <span class="h1">Купим ваш авто</span>
+                    за 93% рыночной цены
+                    <span class="h1">в течении 120 минут</span>
+                  </h1>
+                  <p class="home__title-p">
+                    За счёт работы без аренды и с малым штатом <br />
+                    сотрудников
                   </p>
-                  <i class="fa fa-hand-o-down" aria-hidden="true"></i>
-                  <button class="btn">УЗНАТЬ СТОИМОСТЬ СВОЕГО АВТО</button>
-                </div>
-                <div class="box__img">
-                  <img
-                    class="home__img"
-                    src="./images/audi-r8-spyder-v-moskve.jpg"
-                    alt=""
-                    width="580"
-                  />
                 </div>
               </div>
               <div class="wrap__bullit">
-                <div class="bullit">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>
-                  <p class="bullit__item">
-                    сами приедем в удобное для вас время
-                  </p>
-                </div>
-                <div class="bullit">
-                  <i class="fa fa-car" aria-hidden="true"></i>
-                  <p class="bullit__item">без выездов в автосервис</p>
-                </div>
+                <p class="bullit__item">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  сами приедем в удобное для вас время и место
+                </p>
+                <p class="bullit__item">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  берем на себя оформление всех документов
+                </p>
+                <p class="bullit__item">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  оценка и выдача денег за час
+                </p>
+                <p class="bullit__item">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  никаких доплат и комиссий
+                </p>
+                <p class="bullit__item">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  без выездов в автосервис
+                </p>
+                <div class="box__img"></div>
               </div>
-              <div class="wrap__bullit">
-                <div class="bullit">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <p class="bullit__item">
-                    берем на себя оформление документов
-                  </p>
-                </div>
-                <div class="bullit">
-                  <i class="fa fa-folder-open" aria-hidden="true"></i>
-                  <p class="bullit__item">никаких доплат и комиссий</p>
-                </div>
-              </div>
-              <div class="wrap__bullit">
-                <div class="bullit">
-                  <i class="fa fa-money" aria-hidden="true"></i>
-                  <p class="bullit__item">
-                    [оценка, осмотр, выкуп] - наше кредо ;)
-                  </p>
-                </div>
+              <div class="wrap__head-btn">
+                <p class="btn_info">
+                  рассчитайте точную стоимость своего авто за одну минуту
+                </p>
+                <button class="btn">УЗНАТЬ СТОИМОСТЬ СВОЕГО АВТО</button>
               </div>
             </div>
           </section>

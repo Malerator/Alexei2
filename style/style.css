@@ -1,12 +1,15 @@
 :root {
-  --var-bgcolor: rgb(144, 141, 141);
-  --var-fontcolor: rgb(218, 212, 212);
+  /* --var-bgcolor: rgb(144, 141, 141); */
+  --var-bgcolor: rgb(248, 248, 248);
+  /* --var-fontcolor: rgb(218, 212, 212); */
+  --var-fontcolor: rgb(66, 63, 63);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* --var-bgcolor: #282a2d; */
     --var-bgcolor: #252831;
+    /* --var-bgcolor: #000; */
     --var-fontcolor: #eee;
   }
 }
@@ -34,8 +37,10 @@ body {
 }
 
 h1 {
-  font-size: 7vmin;
+  font-size: 5vmin;
   font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 3vmin;
 }
 
 h2 {
@@ -67,7 +72,6 @@ h4 {
 h5 {
   font-size: 4vmin;
   text-align: right;
-  /* transform: rotate(4deg); */
 }
 
 h6 {
@@ -77,13 +81,12 @@ h6 {
 }
 
 img {
-  mix-blend-mode: color-burn;
+  /* mix-blend-mode: color-burn; */
 }
 
 .container {
   margin: 0 auto;
-  padding: 3% 5%;
-  box-sizing: border-box;
+  padding: 3% 7%;
 }
 
 .site-wrap {
@@ -190,7 +193,7 @@ img {
   right: 1%;
   opacity: 0.5;
   position: absolute;
-  top: 19%;
+  top: 17%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
@@ -267,43 +270,10 @@ img {
   transition: 0.3s;
 }
 
-/* .panel__animation-list {
-  font-size: 3.3vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
-} */
-
-/* .panel__animation-list span {
-  cursor: pointer;
-  display: inline-block;
-  opacity: 0.2;
-  position: relative;
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  user-select: none;
-} */
-
-/* .panel__animation-list span:after {
-  border-bottom: 0.3vmin solid transparent;
-  bottom: 0;
-  content: "";
-  left: -1px;
-  position: absolute;
-  right: 0;
-  transition: border-color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  width: 100%;
+.panel__zoom {
+  width: 30px;
+  height: 20px;
 }
-
-.panel__animation-list span.active,
-.panel__animation-list span:hover {
-  opacity: 1;
-}
-
-.panel__animation-list span.active:after,
-.panel__animation-list span:hover:after {
-  border-color: white;
-} */
 
 @font-face {
   font-family: "Gilroy-Bold";
@@ -325,4 +295,36 @@ img {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-top: 7%;
+  }
+  h1 {
+    font-size: 4vmin;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .panel__zoom {
+    width: 20px;
+    height: 13px;
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 8%;
+  }
+  h1 {
+    font-size: 6vmin;
+  }
+  .panel__nav {
+    font-size: 2.5vmin;
+  }
+  .panel__zoom {
+    top: 13%;
+  }
 }
