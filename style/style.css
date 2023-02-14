@@ -193,7 +193,7 @@ img {
   right: 1%;
   opacity: 0.5;
   position: absolute;
-  top: 17%;
+  top: 20%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
@@ -326,5 +326,10 @@ img {
   }
   .panel__zoom {
     top: 13%;
+  }
+  .panel__nav--down,
+  .panel__nav--left-down,
+  .panel__nav--right-down {
+    bottom: 12rem;
   }
 }
