@@ -114,7 +114,7 @@ img {
 }
 
 .panel {
-  height: 100vh;
+  height: 844px;
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
