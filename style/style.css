@@ -128,7 +128,7 @@ img {
   bottom: 0;
   content: "";
   left: 0;
-  /* pointer-events: none; */
+  pointer-events: none;
   position: absolute;
   right: 0;
   top: 0;
