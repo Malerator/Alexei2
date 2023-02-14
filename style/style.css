@@ -115,8 +115,6 @@ img {
 
 .panel {
   height: 100vh;
-  /* height: fit-content; */
-  /* height: 100%; */
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -130,7 +128,7 @@ img {
   bottom: 0;
   content: "";
   left: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
   right: 0;
   top: 0;
