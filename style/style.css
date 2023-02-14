@@ -87,6 +87,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 3% 7%;
+  overflow-y: scroll;
 }
 
 .site-wrap {
@@ -121,7 +122,6 @@ img {
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   width: 100vw;
   will-change: transform;
-  overflow-y: scroll;
 }
 
 .panel:before {
