@@ -233,7 +233,7 @@
     padding: 12px 21px;
   }
   .panel {
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 }
 
