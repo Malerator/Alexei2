@@ -232,9 +232,6 @@
     font-size: 4vmin;
     padding: 12px 21px;
   }
-  .panel {
-    overflow-y: scroll;
-  }
 }
 
 @media screen and (max-width: 375px) {

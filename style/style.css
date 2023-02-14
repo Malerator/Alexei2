@@ -31,8 +31,7 @@ body {
   color: var(--var-fontcolor);
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
 }
@@ -115,12 +114,14 @@ img {
 }
 
 .panel {
-  height: 100vh;
+  /* height: 100vh; */
+  height: fit-content;
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   width: 100vw;
   will-change: transform;
+  overflow-y: scroll;
 }
 
 .panel:before {
