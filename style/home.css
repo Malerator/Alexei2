@@ -207,7 +207,7 @@
     margin: 0;
     max-width: 92%;
     margin-top: 10vmin;
-    margin-bottom: 20vmin;
+    margin-bottom: 10vmin;
   }
   .logo__item {
     flex-direction: column;

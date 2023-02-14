@@ -327,6 +327,9 @@ img {
   .panel__zoom {
     top: 13%;
   }
+}
+
+@media screen and (max-width: 412px) {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
