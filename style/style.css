@@ -34,7 +34,6 @@ body {
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
-  position: sticky;
 }
 
 h1 {
@@ -115,9 +114,9 @@ img {
 }
 
 .panel {
-  /* height: 100vh; */
+  height: 100vh;
   /* height: fit-content; */
-  height: 100%;
+  /* height: 100%; */
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
