@@ -34,8 +34,6 @@ body {
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
-  width: 100vw;
-  height: 100vh;
 }
 
 h1 {
