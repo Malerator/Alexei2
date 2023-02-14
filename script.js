@@ -1,13 +1,13 @@
-document
-  .querySelector("body")
-  .addEventListener("wheel", preventScroll, { passive: false });
+// document
+//   .querySelector("body")
+//   .addEventListener("wheel", preventScroll, { passive: false });
 
-function preventScroll(e) {
-  e.preventDefault();
-  e.stopPropagation();
+// function preventScroll(e) {
+//   e.preventDefault();
+//   e.stopPropagation();
 
-  return false;
-}
+//   return false;
+// }
 
 ///////////////////////////////////////////отправка данных в телеграмм////////////////////////////////////////////
 
