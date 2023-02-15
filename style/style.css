@@ -312,6 +312,9 @@ img {
     height: 13px;
     top: 18%;
   }
+  .panel__nav {
+    font-size: 3vmin;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -320,9 +323,6 @@ img {
   }
   h1 {
     font-size: 6vmin;
-  }
-  .panel__nav {
-    font-size: 3.5vmin;
   }
   .panel__zoom {
     top: 13%;
@@ -333,6 +333,6 @@ img {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
-    bottom: 2rem;
+    bottom: 4rem;
   }
 }
