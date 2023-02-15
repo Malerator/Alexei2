@@ -333,6 +333,6 @@ img {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
-    bottom: 8rem;
+    bottom: 2rem;
   }
 }
