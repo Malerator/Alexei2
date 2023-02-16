@@ -217,6 +217,13 @@ img {
   transition: 0.6s;
 }
 
+.panel__nav--left,
+.panel__nav--right {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: rotate(-90deg);
+}
+
 .panel__nav--up {
   left: 50%;
   top: 1rem;
@@ -224,9 +231,9 @@ img {
 }
 
 .panel__nav--left {
-  left: 1rem;
+  left: 1.5rem;
   top: 50%;
-  transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+  transform: translateY(-50%) translateX(-100%);
   transform-origin: top left;
 }
 
@@ -241,9 +248,9 @@ img {
 }
 
 .panel__nav--right {
-  right: 1rem;
+  right: 1.5rem;
   top: 50%;
-  transform: translateY(-50%) rotate(90deg) translateX(100%);
+  transform: translateY(-50%) translateX(100%);
   transform-origin: top right;
 }
 
@@ -272,7 +279,7 @@ img {
 
 .panel__nav-active {
   transform: scale(1.2, 1.2);
-  color: rgb(25, 25, 27);
+  color: rgb(28, 214, 140);
   position: absolute;
   opacity: 1;
   text-shadow: 0 0 3vmin #fff;
