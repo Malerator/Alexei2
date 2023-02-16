@@ -279,7 +279,7 @@ img {
 
 .panel__nav-active {
   transform: scale(1.2, 1.2);
-  color: rgb(28, 214, 140);
+  color: rgb(213, 35, 65);
   position: absolute;
   opacity: 1;
   text-shadow: 0 0 3vmin #fff;
