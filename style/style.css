@@ -114,11 +114,11 @@ img {
 }
 
 .panel {
+  width: 100vw;
   height: 100vh;
   position: absolute;
   align-items: center;
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  width: 100vw;
   will-change: transform;
 }
 
@@ -210,7 +210,7 @@ img {
 .panel__nav {
   cursor: pointer;
   opacity: 0.5;
-  color: red;
+  color: rgb(239, 17, 17);
   position: absolute;
   user-select: none;
   will-change: opacity;
@@ -266,6 +266,15 @@ img {
 .panel__nav:hover {
   opacity: 1;
   color: red;
+  text-shadow: 0 0 3vmin #fff;
+  transition: 0.3s;
+}
+
+.panel__nav-active {
+  transform: scale(1.2, 1.2);
+  color: rgb(25, 25, 27);
+  position: absolute;
+  opacity: 1;
   text-shadow: 0 0 3vmin #fff;
   transition: 0.3s;
 }

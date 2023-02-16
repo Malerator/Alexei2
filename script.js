@@ -8,7 +8,29 @@
 
 //   return false;
 // }
+//////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
+window.onload = changeOnLoad;
+const tar = document.querySelectorAll(".panel__nav");
 
+function changeOnLoad() {
+  console.log(tar);
+  const a = setTimeout(function () {
+    tar.forEach((el) => el.classList.remove("panel__nav"));
+    tar.forEach((el) => el.classList.add("panel__nav-active"));
+  }, 400);
+  const b = setTimeout(function () {
+    tar.forEach((el) => el.classList.remove("panel__nav-active"));
+    tar.forEach((el) => el.classList.add("panel__nav"));
+  }, 1000);
+  const c = setTimeout(function () {
+    tar.forEach((el) => el.classList.remove("panel__nav"));
+    tar.forEach((el) => el.classList.add("panel__nav-active"));
+  }, 1800);
+  const d = setTimeout(function () {
+    tar.forEach((el) => el.classList.remove("panel__nav-active"));
+    tar.forEach((el) => el.classList.add("panel__nav"));
+  }, 2800);
+}
 ///////////////////////////////////////////отправка данных в телеграмм////////////////////////////////////////////
 
 const popUp = document.createElement("div");
@@ -53,7 +75,7 @@ function openModal() {
 
 function closeModal() {
   popUp.style.display = "none";
-  document.body.style.overflow = "initial";
+  // document.body.style.overflow = "initial";
 }
 
 form.addEventListener("submit", function (el) {
