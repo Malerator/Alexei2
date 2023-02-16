@@ -8,6 +8,7 @@
 
 //   return false;
 // }
+
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
