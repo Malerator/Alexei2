@@ -85,7 +85,7 @@
 .arrow1 {
   position: absolute;
   top: 15%;
-  left: 68%;
+  left: 60%;
   width: 150px;
   height: 150px;
   background-image: url("../images/Arrow\ 1.svg");
@@ -98,7 +98,7 @@
 .arrow2 {
   position: absolute;
   top: 55%;
-  left: 68%;
+  left: 60%;
   width: 150px;
   height: 150px;
   background-image: url("../images/Arrow\ 1.svg");
@@ -106,6 +106,12 @@
   background-size: contain;
   background-position: center;
   transform: rotate(2.5deg);
+}
+
+.wrap__video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .video__img {
@@ -129,4 +135,75 @@ iframe {
   justify-content: space-between;
   align-items: center;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  .head__info {
+    font-size: 2.5vmin;
+    margin-top: 1%;
+  }
+  .wrap__video {
+    flex-direction: column-reverse;
+  }
+  .video__img {
+    width: 40vmin;
+    height: 40vmin;
+  }
+  iframe {
+    width: 60vmin;
+    height: 25vmin;
+  }
+  .header__card {
+    width: 30vmin;
+    height: 21vmin;
+  }
+  .arrow1 {
+    left: 80%;
+  }
+
+  .arrow2 {
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 45vmin;
+    height: 25vmin;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .head__info {
+    font-size: 3.5vmin;
+    margin-top: 3%;
+  }
+  .wrap__video {
+    flex-direction: column;
+  }
+  .video__img {
+    width: 50vmin;
+    height: 50vmin;
+  }
+  iframe {
+    width: 80vmin;
+    height: 44.8vmin;
+  }
+  .header__card {
+    width: 27vmin;
+    height: 21vmin;
+  }
+  .arrow1 {
+    display: none;
+  }
+
+  .arrow2 {
+    display: none;
+  }
+  .wrap__header-card {
+    flex-direction: initial;
+  }
+  .video {
+    flex-direction: column;
+  }
 }
