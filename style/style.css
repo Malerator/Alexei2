@@ -362,7 +362,7 @@ h6 {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
-    bottom: 15%;
+    bottom: 20%;
   }
 }
 
@@ -372,8 +372,5 @@ h6 {
   }
   .panel__nav {
     font-size: 4vmin !important;
-  }
-  .panel {
-    overflow-y: scroll;
   }
 }
