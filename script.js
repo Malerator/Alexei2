@@ -16,6 +16,12 @@ let vh = window.innerHeight * 0.01;
 // Затем устанавливаем значение свойства переменной --vh
 // для корневого элемента
 document.documentElement.style.setProperty("--vh", `${vh}px`);
+// слушаем событие resize
+window.addEventListener("resize", () => {
+  // получаем текущее значение высоты
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
