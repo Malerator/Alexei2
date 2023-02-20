@@ -317,6 +317,9 @@ h6 {
   h2 {
     font-size: 4vmin;
   }
+  h4 {
+    font-size: 6vmin;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -327,6 +330,10 @@ h6 {
   }
   .panel__nav {
     font-size: 3vmin;
+  }
+  h4 {
+    font-size: 3vmin;
+    line-height: 4vmin;
   }
 }
 
@@ -339,6 +346,11 @@ h6 {
   }
   h2 {
     font-size: 5vmin;
+  }
+  h4 {
+    text-align: center;
+    font-size: 6vmin;
+    line-height: 7vmin;
   }
   .panel__zoom {
     top: 13%;
