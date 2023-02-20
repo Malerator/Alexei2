@@ -176,7 +176,7 @@ iframe {
 @media screen and (max-width: 425px) {
   .head__info {
     font-size: 3.5vmin;
-    margin-top: 3%;
+    margin-top: 1.5%;
   }
   .wrap__video {
     flex-direction: column;
