@@ -35,6 +35,8 @@ body {
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
+  touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 h1 {
