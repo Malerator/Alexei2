@@ -375,3 +375,24 @@ h6 {
     font-size: 4vmin !important;
   }
 }
+
+/*типа запрет ротации моб устройства*/
+@media only screen and (min-width: 415px) and (max-width: 1279px) {
+  body {
+    display: none;
+  }
+  html:before {
+    content: "Переверните устройство в портретный режим или откройте сайт с компьютера.";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    z-index: 999;
+    text-align: center;
+    width: 80%;
+    height: 100px;
+  }
+}
