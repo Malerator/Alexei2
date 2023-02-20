@@ -8,6 +8,18 @@ function preventScroll(e) {
 
   return false;
 }
+
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event = event.originalEvent || event;
+
+    if (event.scale > 1) {
+      event.preventDefault();
+    }
+  },
+  false
+);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Сначала получаем высоту окна просмотра
 // и умножаем ее на 1%
