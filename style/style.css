@@ -35,8 +35,6 @@ body {
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
-  touch-action: pan-y;
-  touch-action: pan-x;
 }
 
 h1 {
@@ -119,6 +117,8 @@ h6 {
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   will-change: transform;
   pointer-events: none;
+  touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .panel:before {
