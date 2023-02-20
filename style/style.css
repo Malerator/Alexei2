@@ -366,4 +366,7 @@ h6 {
   h2 {
     font-size: 6vmin;
   }
+  .panel__nav {
+    font-size: 4vmin !important;
+  }
 }
