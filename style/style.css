@@ -278,7 +278,7 @@ h6 {
   color: rgb(213, 35, 65);
   position: absolute;
   opacity: 1;
-  text-shadow: 0 0 3vmin #fff;
+  text-shadow: 0 0 3vmin #390ee8;
   transition: 0.3s;
 }
 
@@ -363,7 +363,7 @@ h6 {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
-    bottom: 20%;
+    bottom: 15%;
   }
 }
 

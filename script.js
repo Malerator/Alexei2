@@ -8,11 +8,12 @@
 
 //   return false;
 // }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Сначала получаем высоту окна просмотра
 // и умножаем ее на 1%
 let vh = window.innerHeight * 0.01;
 
-// Затем устанавливаем значение свойства --vh
+// Затем устанавливаем значение свойства переменной --vh
 // для корневого элемента
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
@@ -31,11 +32,11 @@ function changeOnLoad() {
   const c = setTimeout(function () {
     tar.forEach((el) => el.classList.remove("panel__nav"));
     tar.forEach((el) => el.classList.add("panel__nav-active"));
-  }, 1800);
+  }, 1400);
   const d = setTimeout(function () {
     tar.forEach((el) => el.classList.remove("panel__nav-active"));
     tar.forEach((el) => el.classList.add("panel__nav"));
-  }, 2800);
+  }, 2000);
 }
 ///////////////////////////////////////////отправка данных в телеграмм////////////////////////////////////////////
 
