@@ -14,7 +14,6 @@ window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
 
 function changeOnLoad() {
-  console.log(tar);
   const a = setTimeout(function () {
     tar.forEach((el) => el.classList.remove("panel__nav"));
     tar.forEach((el) => el.classList.add("panel__nav-active"));
@@ -228,7 +227,7 @@ function addClass(el, cls) {
 
 function removeClass(el, cls) {
   if (this.hasClass(el, cls)) {
-    var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
+    let reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
     el.className = el.className.replace(reg, " ");
   }
 }

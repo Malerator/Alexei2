@@ -148,6 +148,12 @@
 }
 
 /* начало мобильной версии*/
+
+@media screen and (max-width: 1240px) {
+  .wrap__bullit {
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .home__title-p {
     font-size: 3vmin;
@@ -180,7 +186,11 @@
     gap: 10vmin;
   }
   .wrap__bullit {
+    max-width: 85%;
     margin-bottom: 15vmin;
+  }
+  .panel__nav {
+    font-size: 2vmin;
   }
 }
 
