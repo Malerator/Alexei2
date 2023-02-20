@@ -362,7 +362,7 @@ h6 {
   .panel__nav--down,
   .panel__nav--left-down,
   .panel__nav--right-down {
-    bottom: 20%;
+    margin-bottom: 20%;
   }
 }
 
