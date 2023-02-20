@@ -191,7 +191,7 @@ iframe {
   }
   .header__card {
     width: 27vmin;
-    height: 21vmin;
+    height: 25vmin;
   }
   .arrow1 {
     display: none;
@@ -205,5 +205,14 @@ iframe {
   }
   .video {
     flex-direction: column;
+  }
+  .card__head-red-text {
+    font-size: 1.2vmin;
+  }
+  .card__head-item {
+    font-size: 2.2vmin;
+  }
+  .card__head-text {
+    font-size: 1.5vmin;
   }
 }
