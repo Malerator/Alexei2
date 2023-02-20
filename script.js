@@ -8,14 +8,13 @@
 
 //   return false;
 // }
-function resetHeight() {
-  // reset the body height to that of the inner browser
-  document.body.style.height = window.innerHeight + "px";
-}
-// reset the height whenever the window's resized
-window.addEventListener("resize", resetHeight);
-// called to initially set the height.
-resetHeight();
+// Сначала получаем высоту окна просмотра
+// и умножаем ее на 1%
+let vh = window.innerHeight * 0.01;
+
+// Затем устанавливаем значение свойства --vh
+// для корневого элемента
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
