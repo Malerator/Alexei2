@@ -372,4 +372,7 @@ h6 {
   .panel__nav {
     font-size: 4vmin !important;
   }
+  .panel {
+    overflow-y: scroll;
+  }
 }
