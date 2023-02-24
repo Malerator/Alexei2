@@ -29,6 +29,18 @@
   --app-height: 100%;
 }
 
+body {
+  background-repeat: repeat;
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+  font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000px;
+  text-transform: uppercase;
+}
+
 html,
 body {
   padding: 0;
@@ -40,18 +52,6 @@ body {
   @media not all and (hover: hover) {
     height: var(--app-height);
   }
-}
-
-body {
-  background-repeat: repeat;
-  background-color: var(--var-bgcolor);
-  color: var(--var-fontcolor);
-  font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  perspective: 1000px;
-  text-transform: uppercase;
 }
 
 h1 {
