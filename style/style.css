@@ -403,7 +403,7 @@ h6 {
 } */
 @media only screen and (orientation: portrait) {
   body {
-    height: 100vw;
+    height: 100vh;
     transform: rotate(90deg);
   }
 }
