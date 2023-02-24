@@ -21,7 +21,10 @@ document.addEventListener(
   false
 );
 // запрет поворота экрана
-
+// screen.addEventListener("orientationchange", function () {
+//   console.log("The orientation of the screen is: " + screen.orientation);
+//   screen.lockOrientation("landscape");
+// });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Сначала получаем высоту окна просмотра
 // и умножаем ее на 1%

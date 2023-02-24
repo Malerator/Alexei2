@@ -379,7 +379,7 @@ h6 {
 }
 
 /*типа запрет ротации моб устройства*/
-@media only screen and (orientation: landscape) and (orientation: portrait) {
+@media (orientation: landscape) and (max-width: 450px) {
   body {
     display: none;
   }
