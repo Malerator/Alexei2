@@ -30,6 +30,8 @@ body {
   background-color: var(--var-bgcolor);
   color: var(--var-fontcolor);
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  height: calc(var(--vh, 1vh) * 100);
+
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -192,7 +194,7 @@ h6 {
   opacity: 0.5;
   position: absolute;
   top: 20%;
-  transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
+  transform: translateX(-50%) translateY(-12vmin);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
 }
