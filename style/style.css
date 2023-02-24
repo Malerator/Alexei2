@@ -384,7 +384,6 @@ h6 {
     display: none;
   }
   html:before {
-    font-family: "Caveat Brush";
     font-weight: 700;
     font-size: 6vmin;
     content: "Переверните устройство в портретный режим или откройте сайт с компьютера ;)";
@@ -394,7 +393,7 @@ h6 {
     right: 0;
     bottom: 0;
     margin: auto;
-    background: #cecaca;
+    background: #dc9191;
     z-index: 999;
     text-align: center;
     width: 80%;
