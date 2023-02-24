@@ -384,8 +384,11 @@ h6 {
     display: none;
   }
   html:before {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 6vmin;
+    border-radius: 10px;
     content: "Переверните устройство в портретный режим или откройте сайт с компьютера ;)";
     position: fixed;
     top: 0;
