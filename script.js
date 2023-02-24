@@ -278,7 +278,7 @@ function setPos() {
   }, 800);
 }
 
-setPos();
+// setPos();
 
 function moveUp() {
   addClass(wrap, "animate");
