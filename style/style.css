@@ -32,8 +32,7 @@ body {
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
 }
@@ -90,11 +89,11 @@ h6 {
 }
 
 .site-wrap.show-all {
-  transform: rotateY(15deg) scale(0.2);
+  transform: rotateY(25deg) scale(0.2);
 }
 
 .show-all {
-  background-color: #390ee8;
+  background-color: rgba(40, 4, 240, 0.3);
 }
 
 .panel-wrap {
@@ -396,6 +395,7 @@ h6 {
     font-size: 6vmin;
     border-radius: 10px;
     content: "Переверните устройство в портретный режим или откройте сайт с компьютера ;)";
+    padding: 15px;
     position: fixed;
     top: 0;
     left: 0;
