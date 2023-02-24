@@ -379,7 +379,7 @@ h6 {
 }
 
 /*типа запрет ротации моб устройства*/
-@media (orientation: landscape) and (max-width: 700px) {
+@media (orientation: landscape) and (max-width: 768px) {
   body {
     display: none;
   }
@@ -401,22 +401,3 @@ h6 {
     height: 100px;
   }
 }
-/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
-/* @media only screen and (orientation: landscape) {
-  #turn {
-    display: block;
-  }
-  body {
-    display: none;
-  }
-} */
-
-/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
-/* @media only screen and (orientation: portrait) {
-  #turn {
-    display: none;
-  }
-  body {
-    display: block;
-  }
-} */
