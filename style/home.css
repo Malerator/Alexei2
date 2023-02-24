@@ -183,7 +183,7 @@
     height: 70px;
   }
   .connection {
-    /* gap: 10vmin; */
+    gap: 12vmin;
   }
   .wrap__bullit {
     max-width: 85%;
