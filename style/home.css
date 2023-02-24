@@ -183,7 +183,7 @@
     height: 70px;
   }
   .connection {
-    gap: 12vmin;
+    gap: 5vmin;
   }
   .wrap__bullit {
     max-width: 85%;
@@ -227,7 +227,7 @@
   }
   .connection {
     margin-top: 5vmin;
-    gap: 10vmin;
+    gap: 25vmin;
   }
   .tel {
     font-size: 4vmin;
