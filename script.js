@@ -40,21 +40,21 @@ function lock(orientation) {
 }
 
 // (B) UNLOCK SCREEN ORIENTATION
-function unlock() {
-  // (B1) UNLOCK FIRST
-  screen.orientation.unlock();
+// function unlock() {
+//   // (B1) UNLOCK FIRST
+//   screen.orientation.unlock();
 
-  // (B2) THEN EXIT FULL SCREEN
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
-  } else if (document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
-  } else if (document.msExitFullscreen) {
-    document.msExitFullscreen();
-  }
-}
+//   // (B2) THEN EXIT FULL SCREEN
+//   if (document.exitFullscreen) {
+//     document.exitFullscreen();
+//   } else if (document.webkitExitFullscreen) {
+//     document.webkitExitFullscreen();
+//   } else if (document.mozCancelFullScreen) {
+//     document.mozCancelFullScreen();
+//   } else if (document.msExitFullscreen) {
+//     document.msExitFullscreen();
+//   }
+// }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Сначала получаем высоту окна просмотра
 // и умножаем ее на 1%
