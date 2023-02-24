@@ -20,22 +20,10 @@ document.addEventListener(
   },
   false
 );
-// запрет поворота экрана
-// screen.addEventListener("orientationchange", function () {
-//   console.log("The orientation of the screen is: " + screen.orientation);
-//   screen.lockOrientation("landscape");
-// });
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Сначала получаем высоту окна просмотра
-// и умножаем ее на 1%
+////////////////////////////////////////////установка адаптивной высоты экрана////////////////////////////////////
 let vh = window.innerHeight * 0.01;
-
-// Затем устанавливаем значение свойства переменной --vh
-// для корневого элемента
 document.documentElement.style.setProperty("--vh", `${vh}px`);
-// слушаем событие resize
 window.addEventListener("resize", () => {
-  // получаем текущее значение высоты
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
@@ -381,10 +369,3 @@ function zoomIn() {
   }
   removeClass(site, "show-all");
 }
-
-// window.addEventListener("mousewheel", function (e) {
-//   if (e.ctrlKey) {
-//     e.preventDefault();
-//     return false;
-//   }
-// });

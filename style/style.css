@@ -30,8 +30,6 @@ body {
   background-color: var(--var-bgcolor);
   color: var(--var-fontcolor);
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  height: calc(var(--vh, 1vh) * 100);
-
   margin: 0;
   height: 100%;
   overflow: hidden;
