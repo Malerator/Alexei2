@@ -1,43 +1,45 @@
-document
-  .querySelector("body")
-  .addEventListener("wheel", preventScroll, { passive: false });
+// document
+//   .querySelector("body")
+//   .addEventListener("wheel", preventScroll, { passive: false });
 
-function preventScroll(e) {
-  e.preventDefault();
-  e.stopPropagation();
+// function preventScroll(e) {
+//   e.preventDefault();
+//   e.stopPropagation();
 
-  return false;
-}
+//   return false;
+// }
 
-document.addEventListener(
-  "touchmove",
-  function (event) {
-    event = event.originalEvent || event;
+// document.addEventListener(
+//   "touchmove",
+//   function (event) {
+//     event = event.originalEvent || event;
 
-    if (event.scale > 1) {
-      event.preventDefault();
-    }
-  },
-  false
-);
+//     if (event.scale > 1) {
+//       event.preventDefault();
+//     }
+//   },
+//   false
+// );
 // запрет поворота экрана
 // (A) LOCK SCREEN ORIENTATION
-function lock(orientation) {
-  // (A1) GO INTO FULL SCREEN FIRST
-  let de = document.documentElement;
-  if (de.requestFullscreen) {
-    de.requestFullscreen();
-  } else if (de.mozRequestFullScreen) {
-    de.mozRequestFullScreen();
-  } else if (de.webkitRequestFullscreen) {
-    de.webkitRequestFullscreen();
-  } else if (de.msRequestFullscreen) {
-    de.msRequestFullscreen();
-  }
+// function lock(orientation) {
+//   // (A1) GO INTO FULL SCREEN FIRST
+//   let de = document.documentElement;
+//   if (de.requestFullscreen) {
+//     de.requestFullscreen();
+//   } else if (de.mozRequestFullScreen) {
+//     de.mozRequestFullScreen();
+//   } else if (de.webkitRequestFullscreen) {
+//     de.webkitRequestFullscreen();
+//   } else if (de.msRequestFullscreen) {
+//     de.msRequestFullscreen();
+//   }
 
-  // (A2) THEN LOCK ORIENTATION
-  screen.orientation.lock(orientation);
-}
+//   // (A2) THEN LOCK ORIENTATION
+//   screen.orientation.lock(orientation);
+// }
+
+screen.orientation.lock();
 
 // (B) UNLOCK SCREEN ORIENTATION
 // function unlock() {
