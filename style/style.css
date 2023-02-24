@@ -359,6 +359,8 @@ h6 {
     font-size: 6vmin;
   }
   .panel__zoom {
+    width: 40px;
+    height: 25px;
     top: 15%;
   }
   .panel__nav--down,
