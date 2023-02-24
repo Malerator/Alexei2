@@ -276,7 +276,7 @@ h6 {
 }
 
 .panel__nav-active {
-  color: rgb(213, 35, 65);
+  color: #390ee8;
   position: absolute;
   opacity: 1;
   text-shadow: 0 0 3vmin #390ee8;
