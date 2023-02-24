@@ -383,8 +383,8 @@ h6 {
   }
 }
 
-/*типа запрет ротации моб устройства*/
-/* @media (orientation: landscape) and (max-width: 768px) {
+/* типа запрет ротации моб устройства*/
+@media (orientation: landscape) and (max-width: 768px) {
   body {
     display: none;
   }
@@ -408,4 +408,4 @@ h6 {
     width: 80%;
     height: 100px;
   }
-} */
+}
