@@ -1,3 +1,10 @@
+var height = Math.max(
+  document.documentElement.clientHeight,
+  window.innerHeight || 0
+);
+console.log(height);
+document.documentElement.style.setProperty("--heigth", `${height}px`);
+
 ////////////////////////////////////
 document
   .querySelector("body")
