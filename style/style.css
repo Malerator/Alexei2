@@ -333,6 +333,18 @@ h6 {
   }
 }
 
+@media screen and (max-width: 984px) {
+  h3 {
+    font-size: 3.5vmin;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  h3 {
+    font-size: 3vmin;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .panel__zoom {
     width: 20px;
@@ -357,6 +369,10 @@ h6 {
   }
   h2 {
     font-size: 5vmin;
+  }
+  h3 {
+    font-size: 5vmin;
+    margin-top: 2vmin;
   }
   h4 {
     text-align: center;
@@ -384,6 +400,12 @@ h6 {
   }
   .panel__nav {
     font-size: 4vmin !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h3 {
+    margin-top: 5vmin;
   }
 }
 

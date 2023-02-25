@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 2.5vmin;
   line-height: 5vmin;
+  margin-bottom: 3vmin;
 }
 
 .panel3__text {
@@ -14,6 +15,17 @@
 .panel3__wrap-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 3vmin;
+}
+
+.panel3__cross {
+  width: 17vmin;
+  height: 17vmin;
+}
+
+.panel3__check {
+  width: 17vmin;
+  height: 17vmin;
 }
 
 .panel3__red-card {
@@ -55,4 +67,154 @@
   justify-content: space-around;
   border-radius: 2vmin;
   background-color: #efefef;
+  margin-bottom: 5vmin;
+}
+
+@media screen and (max-width: 1200px) {
+  .panel3__cross {
+    width: 14vmin;
+    height: 14vmin;
+  }
+
+  .panel3__check {
+    width: 14vmin;
+    height: 14vmin;
+  }
+  .red__card-text {
+    font-size: 1vmin;
+    line-height: 2vmin;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .panel3__cross {
+    width: 10vmin;
+    height: 10vmin;
+  }
+
+  .panel3__check {
+    width: 10vmin;
+    height: 10vmin;
+  }
+  .four-eye {
+    width: 42vmin;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .panel3__cross {
+    width: 8vmin;
+    height: 8vmin;
+  }
+
+  .panel3__check {
+    width: 8vmin;
+    height: 8vmin;
+  }
+  .four-eye {
+    width: 39vmin;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .panel3__heder {
+    font-size: 2.3vmin;
+  }
+  .panel3__text {
+    font-size: 2vmin;
+  }
+  .panel3__img-card {
+    margin-bottom: 9vmin;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .panel3__heder {
+    font-size: 2vmin;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .panel3__cross {
+    width: 5vmin;
+    height: 5vmin;
+  }
+
+  .panel3__check {
+    width: 5vmin;
+    height: 5vmin;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .four-eye {
+    width: 30vmin;
+  }
+  .panel3__wrap-item {
+    margin-bottom: 8vmin;
+  }
+  .panel3__img-card {
+    margin-bottom: 14vmin;
+  }
+  .panel3__heder {
+    margin-bottom: 10vmin;
+  }
+  .vikup {
+    width: 20vmin;
+  }
+  .lada {
+    width: 20vmin;
+  }
+  .money {
+    width: 20vmin;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .panel3__wrap-item {
+    grid-template-columns: 1fr;
+    margin-bottom: 3vmin;
+  }
+  .four-eye {
+    align-self: center;
+    justify-self: center;
+    width: 70vmin;
+  }
+  .panel3__heder {
+    font-size: 3.5vmin;
+  }
+  .panel3__item {
+    align-self: center;
+    justify-self: center;
+  }
+  .panel3__cross {
+    width: 13vmin;
+    height: 13vmin;
+  }
+
+  .panel3__check {
+    width: 13vmin;
+    height: 13vmin;
+  }
+  .red__card-text {
+    font-size: 2vmin;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .four-eye {
+    width: 85vmin;
+  }
+  .panel3__heder {
+    margin-bottom: 5vmin;
+  }
+  .panel3__text {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .panel3__wrap-item {
+    margin-bottom: 10vmin;
+  }
 }
