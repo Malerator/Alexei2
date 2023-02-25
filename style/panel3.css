@@ -191,7 +191,9 @@
     width: 13vmin;
     height: 13vmin;
   }
-
+  .panel3__text {
+    text-align: center;
+  }
   .panel3__check {
     width: 13vmin;
     height: 13vmin;
@@ -210,7 +212,6 @@
   }
   .panel3__text {
     font-size: 3vmin;
-    text-align: center;
   }
   .panel3__img-card {
     margin-bottom: 3vmin;
