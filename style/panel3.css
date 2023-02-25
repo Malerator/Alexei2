@@ -210,6 +210,7 @@
   }
   .panel3__text {
     font-size: 3vmin;
+    text-align: center;
   }
   .panel3__img-card {
     margin-bottom: 3vmin;
