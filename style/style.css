@@ -385,7 +385,7 @@ h6 {
 
 @media screen and (max-heigth: 1080px) {
   .panel {
-    height: 90%;
+    height: 90vh;
   }
 }
 
