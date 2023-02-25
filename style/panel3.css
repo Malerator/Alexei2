@@ -1,70 +1,58 @@
 .panel3__heder {
   font-weight: 700;
-  font-size: 3vmin;
-  line-height: 4.4vmin;
-  text-align: right;
+  font-size: 2.5vmin;
+  line-height: 5vmin;
+}
+
+.panel3__text {
+  font-weight: 700;
+  font-size: 2vmin;
   text-decoration: underline;
-  text-decoration-color: red;
-  margin-bottom: 5%;
+  text-decoration-color: brown;
 }
 
-.card__title {
-  flex: 1;
-  font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 7vmin;
+.panel3__wrap-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card__item {
-  font-weight: 500;
-  flex: 1;
-  font-size: 3vmin;
+.panel3__red-card {
+  display: flex;
+  align-items: center;
+  padding-left: 2vmin;
+  width: fit-content;
+  height: fit-content;
+  background-color: #dd1639;
+  border-radius: 2vmin;
 }
 
-.wrap__card {
+.red__card-text {
+  font-weight: 700;
+  font-size: 1.5vmin;
+  line-height: 3vmin;
+}
+
+.panel3__item {
   display: flex;
   flex-direction: column;
+  gap: 2vmin;
 }
 
-.card {
-  width: 80%;
-  margin-top: 3%;
-  padding: 0 3% 0;
+.panel3__yellow-card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000;
-  border-radius: 1em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  background-color: inherit;
-  transition: 0.5s;
+  padding-left: 2vmin;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f7f7d4;
+  color: #000;
+  border-radius: 2vmin;
 }
 
-.card:nth-child(2) {
-  margin-left: 5%;
-}
-.card:nth-child(3) {
-  margin-left: 10%;
-}
-.card:nth-child(4) {
-  margin-left: 15%;
-}
-.card:nth-child(5) {
-  margin-left: 20%;
-}
-
-.card:hover {
-  box-shadow: 0 0.4em 0.2em rgba(14, 13, 13, 1);
-  -webkit-text-fill-color: orangered;
-  -webkit-text-stroke-width: 1px;
-  transition: 0.5s;
-}
-
-/* начало мобильной версии */
-
-@media (max-width: 425px) {
-  #about {
-    padding: 81px 29px 76px;
-  }
+.panel3__img-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2vmin;
+  background-color: #efefef;
 }

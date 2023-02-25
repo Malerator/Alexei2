@@ -58,8 +58,8 @@ h2 {
 h3 {
   font-size: 4vmin;
   line-height: 1.1;
-  margin: 0 0 2% 0;
-  text-align: right;
+  margin: 0 0 1% 0;
+  text-align: left;
 }
 
 h4 {
@@ -380,6 +380,12 @@ h6 {
   }
   .panel__nav {
     font-size: 4vmin !important;
+  }
+}
+
+@media screen and (max-heigth: 1080px) {
+  .panel {
+    height: 100%;
   }
 }
 
