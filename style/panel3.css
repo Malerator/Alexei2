@@ -211,6 +211,9 @@
   .panel3__text {
     font-size: 3vmin;
   }
+  .panel3__img-card {
+    margin-bottom: 3vmin;
+  }
 }
 
 @media screen and (max-width: 375px) {
