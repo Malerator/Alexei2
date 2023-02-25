@@ -1,9 +1,20 @@
-var height = Math.max(
-  document.documentElement.clientHeight,
-  window.innerHeight || 0
-);
-console.log(height);
-document.documentElement.style.setProperty("--heigth", `${height}px`);
+// var height = Math.max(
+//   document.documentElement.clientHeight,
+//   window.innerHeight || 0
+// );
+// console.log(height);
+// document.documentElement.style.setProperty("--heigth", `${height}px`);
+function calcVH() {
+  var vH = Math.max(
+    document.documentElement.clientHeight,
+    window.innerHeight || 0
+  );
+  document
+    .getElementsByClassName("panel")
+    .setAttribute("style", "height:" + vH + "px;");
+}
+calcVH();
+window.addEventListener("onorientationchange", calcVH, true);
 
 ////////////////////////////////////
 document
