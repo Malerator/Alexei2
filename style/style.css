@@ -25,6 +25,10 @@
   -webkit-user-select: none;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-repeat: repeat;
   background-color: var(--var-bgcolor);
