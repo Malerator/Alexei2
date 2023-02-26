@@ -396,6 +396,7 @@ h6 {
   }
   h6 {
     margin-top: 3vmin;
+    text-align: left;
   }
   h2 {
     font-size: 6vmin;
@@ -417,6 +418,9 @@ h6 {
 
 @media screen and (max-width: 375px) {
   h3 {
+    margin-top: 5vmin;
+  }
+  h6 {
     margin-top: 5vmin;
   }
 }
