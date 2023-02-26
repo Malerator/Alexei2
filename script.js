@@ -1,20 +1,9 @@
-// var height = Math.max(
-//   document.documentElement.clientHeight,
-//   window.innerHeight || 0
-// );
-// console.log(height);
-// document.documentElement.style.setProperty("--heigth", `${height}px`);
-function calcVH() {
-  var vH = Math.max(
-    document.documentElement.clientHeight,
-    window.innerHeight || 0
-  );
-  document
-    .getElementsByClassName("panel")
-    .setAttribute("style", "height:" + vH + "px;");
-}
-calcVH();
-window.addEventListener("onorientationchange", calcVH, true);
+var height = Math.max(
+  document.documentElement.clientHeight,
+  window.innerHeight || 0
+);
+console.log(height);
+document.documentElement.style.setProperty("heigth", `${height}px`);
 
 ////////////////////////////////////
 document
@@ -40,13 +29,13 @@ document.addEventListener(
   false
 );
 ////////////////////////////////////////////установка адаптивной высоты экрана////////////////////////////////////
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
+// window.addEventListener("resize", () => {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+// });
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
