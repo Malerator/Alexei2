@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style/panel3.css" />
     <link rel="stylesheet" href="style/case.css" />
     <link rel="stylesheet" href="style/advantages.css" />
-    <link rel="stylesheet" href="style/panel6.css" />
+    <link rel="stylesheet" href="style/options.css" />
     <link rel="stylesheet" href="style/modal.css" />
     <title>Выкуп авто в СПб и ЛО</title>
   </head>
@@ -432,90 +432,79 @@
           </section>
           <!-- слева от главной  ////////////////////////////////////////////////////////////////////////-->
           <section class="panel" data-x-pos="-1" data-y-pos="0">
+            <span class="panel__nav panel__nav--up js-up">вверх</span>
+            <span class="panel__nav panel__nav--right-top js-up js-right"
+              >вверх/вправо</span
+            >
+            <span class="panel__nav panel__nav--right js-right">вправо</span>
+            <span class="panel__nav panel__nav--right-down js-down js-right"
+              >вниз/вправо</span
+            >
+            <span class="panel__zoom js-zoom"
+              ><svg
+                viewBox="0 0 33 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="33" height="3.83721" fill="orangered" />
+                <rect y="7.67383" width="33" height="3.83721" fill="red" />
+                <rect y="15.3496" width="33" height="3.83721" fill="red" />
+              </svg>
+            </span>
             <div class="container">
-              <span class="panel__nav panel__nav--up js-up">вверх</span>
-              <span class="panel__nav panel__nav--right-top js-up js-right"
-                >вверх/вправо</span
-              >
-              <span class="panel__nav panel__nav--right js-right">вправо</span>
-              <span class="panel__nav panel__nav--right-down js-down js-right"
-                >вниз/вправо</span
-              >
-              <span class="panel__zoom js-zoom"
-                ><svg
-                  viewBox="0 0 33 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="33" height="3.83721" fill="orangered" />
-                  <rect y="7.67383" width="33" height="3.83721" fill="red" />
-                  <rect y="15.3496" width="33" height="3.83721" fill="red" />
-                </svg>
-              </span>
-              <h2>
-                5 простых шагов,<br />
-                и вы <span class="head__focus">продадите</span> <br />
-                свой автомобиль в течение 2х часов.
-              </h2>
-              <p class="slider-page__text">
-                Мы предлагаем простое решение,<br />
-                которое избавит вас от забот, связанных с продажей автомобиля.
+              <h6>
+                <span class="h1">Какие у вас варианты</span> продажи вашего
+                автомобиля?
+              </h6>
+              <p class="options__header">
+                Бывают разные ситуации и только Вам решать какой путь продажи
+                выбрать
               </p>
-              <div
-                class="itc-slider"
-                data-slider="itc-slider"
-                data-loop="false"
-                data-autoplay="false"
-              >
-                <ol class="itc-slider__indicators">
-                  <li class="itc-slider__indicator" data-slide-to="0"></li>
-                  <li class="itc-slider__indicator" data-slide-to="1"></li>
-                  <li class="itc-slider__indicator" data-slide-to="2"></li>
-                  <li class="itc-slider__indicator" data-slide-to="2"></li>
-                  <li class="itc-slider__indicator" data-slide-to="2"></li>
-                </ol>
-                <div class="itc-slider__wrapper">
-                  <div class="itc-slider__items">
-                    <div class="itc-slider__item">
-                      <p class="itc-slider__item--text">
-                        Оставьте заявку на расчёт точной стоимости вашего авто.
-                        Мы предложим вам актуальную на данный момент стоимость
-                        авто с учётом всех рыночных колебаний.
-                      </p>
-                    </div>
-                    <div class="itc-slider__item">
-                      <p class="itc-slider__item--text">
-                        Назовите менеджеру удобное для вас время и место осмотра
-                        авто. Мы охватываем все районы Санкт- Петербурга и
-                        приезжаем даже в самые дальние уголки Ленинградской
-                        области.
-                      </p>
-                    </div>
-                    <div class="itc-slider__item">
-                      <p class="itc-slider__item--text">
-                        Подготовьте документы (ПТС, СТС, Паспорт РФ) Документы
-                        нужны для проверки номерных агрегатов на автомобиле и
-                        подтверждения собственности
-                      </p>
-                    </div>
-                    <div class="itc-slider__item">
-                      <p class="itc-slider__item--text">
-                        Покажите машину нашему специалисту. Выполним диагностику
-                        максимально быстро и аккуратно для подтверждения
-                        заявленного состояния.
-                      </p>
-                    </div>
-                    <div class="itc-slider__item">
-                      <p class="itc-slider__item--text">
-                        Заключаем официальный договор купли-продажи на месте и
-                        производим расчёт в удобной для вас форме (наличными или
-                        переводом на банковский счёт)
-                      </p>
-                    </div>
-                  </div>
+              <div class="grid__container">
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem">
+                  <p class="grid__elem-red--text">Trade in</p>
                 </div>
-                <button class="itc-slider__btn itc-slider__btn_prev"></button>
-                <button class="itc-slider__btn itc-slider__btn_next"></button>
+                <div class="grid__elem">
+                  <p class="grid__elem-grey--text">Своими силами</p>
+                </div>
+                <div class="grid__elem">
+                  <p class="grid__elem-text">
+                    Оценка <br />
+                    стоимости
+                  </p>
+                </div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem">
+                  <p class="grid__elem-text">
+                    Скорость <br />
+                    продажи
+                  </p>
+                </div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem">
+                  <p class="grid__elem-text">
+                    Безопасность <br />
+                    сделки
+                  </p>
+                </div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem">
+                  <p class="grid__elem-text">
+                    Комфорт <br />
+                    сделки
+                  </p>
+                </div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
+                <div class="grid__elem"></div>
               </div>
             </div>
           </section>
@@ -654,153 +643,70 @@
             >
             <span class="panel__nav panel__nav--down js-down">вниз</span>
             <div class="container">
-              <h6>
-                cтараемся что бы вы остались довольны сделкой и советовали нас
-                своим друзьям и знакомым
-              </h6>
-              <p class="panel6__header">отзывы о нашей работе :</p>
-              <div class="slider">
-                <div class="item">
-                  <a class="previous" onclick="previousSlide()"
-                    ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
-                  ></a>
-                  <div class="item__col">
-                    <p class="item__col-head">
-                      доволен что удалось быстро продать <br />
-                      свою машину и купить микроавтобус о котором давно мечтал.
-                    </p>
-                    <p class="item__col-text">
-                      Решил продать свой Форд Мондео, так как требовалась машина
-                      побольше, чтобы возить внуков на дачу и занятия в городе.
-                      Уже нашёл новый автомобиль, а вот как продать быстро свой
-                      не понимал, да и не сталкивался с продажей. Обратился в
-                      выкуп авто, ребята в течение двух часов приехали прямо ко
-                      мне на работу, осмотрели машину, сразу сошлись по цене и
-                      оформили сделку. Никаких проблем, всё очень вежливо и
-                      тактично. Доволен что удалось быстро продать свою машину и
-                      купить микроавтобус о которм давно мечтал.
-                    </p>
+              <h2>
+                5 простых шагов,<br />
+                и вы <span class="head__focus">продадите</span> <br />
+                свой автомобиль в течение 2х часов.
+              </h2>
+              <p class="slider-page__text">
+                Мы предлагаем простое решение,<br />
+                которое избавит вас от забот, связанных с продажей автомобиля.
+              </p>
+              <div
+                class="itc-slider"
+                data-slider="itc-slider"
+                data-loop="false"
+                data-autoplay="false"
+              >
+                <ol class="itc-slider__indicators">
+                  <li class="itc-slider__indicator" data-slide-to="0"></li>
+                  <li class="itc-slider__indicator" data-slide-to="1"></li>
+                  <li class="itc-slider__indicator" data-slide-to="2"></li>
+                  <li class="itc-slider__indicator" data-slide-to="2"></li>
+                  <li class="itc-slider__indicator" data-slide-to="2"></li>
+                </ol>
+                <div class="itc-slider__wrapper">
+                  <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                      <p class="itc-slider__item--text">
+                        Оставьте заявку на расчёт точной стоимости вашего авто.
+                        Мы предложим вам актуальную на данный момент стоимость
+                        авто с учётом всех рыночных колебаний.
+                      </p>
+                    </div>
+                    <div class="itc-slider__item">
+                      <p class="itc-slider__item--text">
+                        Назовите менеджеру удобное для вас время и место осмотра
+                        авто. Мы охватываем все районы Санкт- Петербурга и
+                        приезжаем даже в самые дальние уголки Ленинградской
+                        области.
+                      </p>
+                    </div>
+                    <div class="itc-slider__item">
+                      <p class="itc-slider__item--text">
+                        Подготовьте документы (ПТС, СТС, Паспорт РФ) Документы
+                        нужны для проверки номерных агрегатов на автомобиле и
+                        подтверждения собственности
+                      </p>
+                    </div>
+                    <div class="itc-slider__item">
+                      <p class="itc-slider__item--text">
+                        Покажите машину нашему специалисту. Выполним диагностику
+                        максимально быстро и аккуратно для подтверждения
+                        заявленного состояния.
+                      </p>
+                    </div>
+                    <div class="itc-slider__item">
+                      <p class="itc-slider__item--text">
+                        Заключаем официальный договор купли-продажи на месте и
+                        производим расчёт в удобной для вас форме (наличными или
+                        переводом на банковский счёт)
+                      </p>
+                    </div>
                   </div>
-                  <div class="item__img">
-                    <img src="./images/JGWg5eNIQlc 1.png" alt="" />
-                    <p class="item__col-text">Николай 63 года, охранник</p>
-                  </div>
-                  <a class="next" onclick="nextSlide()"
-                    ><i
-                      class="fa fa-chevron-circle-right"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
                 </div>
-
-                <div class="item">
-                  <a class="previous" onclick="previousSlide()"
-                    ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
-                  ></a>
-                  <div class="item__col">
-                    <p class="item__col-head">
-                      В итоге за день решил вопрос со своей старушкой Калиной
-                      которой уже давно не пользовался
-                    </p>
-                    <p class="item__col-text">
-                      Давно хотел поменять автомобиль, даже выставил на продажу.
-                      Звонков совсем небыло, да и те редкие что были всё от
-                      перекупов (за 200 заберу). Обратился к ребятам в выкуп
-                      авто ради пробы, а вдруг. Договорились о встрече около
-                      моего дома, подъехали всё посмотрели, предложили очень
-                      приятную сумму с учётом всех моментов по авто. В итоге за
-                      день решил вопрос со своей старушкой Калиной которой уже
-                      давно не пользовался. Благодарен за быструю и чёткую
-                      работу.
-                    </p>
-                  </div>
-                  <div class="item__img">
-                    <img src="./images/JGWg5eNIQlc 1 (1).png" alt="" />
-                    <p class="item__col-text">Константин 39 лет</p>
-                  </div>
-                  <a class="next" onclick="nextSlide()"
-                    ><i
-                      class="fa fa-chevron-circle-right"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </div>
-
-                <div class="item">
-                  <a class="previous" onclick="previousSlide()"
-                    ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
-                  ></a>
-                  <div class="item__col">
-                    <p class="item__col-head">
-                      На ремонт машины не было ни времени ни сил , машина нужна
-                      каждый день
-                    </p>
-                    <p class="item__col-text">
-                      На своей машине попал ДТП , удар сзади не очень сильно.
-                      Что делать дальше? На ремонт машины не было ни времени ни
-                      сил , машина нужна каждый день. обратился к ребятам в
-                      выкупайку, отличный выход из моей ситуации. Машину оценили
-                      бысро , так что с учетом страховых выплат получилась
-                      отличная цена . Все очень просто, прозрачно и быстро .
-                    </p>
-                  </div>
-                  <div class="item__img">
-                    <img src="./images/JGWg5eNIQlc 1 (2).png" alt="" />
-                    <p class="item__col-text">Антон 41 год</p>
-                  </div>
-                  <a class="next" onclick="nextSlide()"
-                    ><i
-                      class="fa fa-chevron-circle-right"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </div>
-
-                <div class="item">
-                  <a class="previous" onclick="previousSlide()"
-                    ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
-                  ></a>
-                  <div class="item__col">
-                    <p class="item__col-head">
-                      понравилось что ребята заехали за мной и отвезли в гараж,
-                      где осмотрели машину, цена меня устроила
-                    </p>
-                    <p class="item__col-text">
-                      Пришло время заканчивать свой водительский стаж , возраст
-                      уже не тот. Долго думал , как продать машину , прикидывал
-                      в голове несколько способов Автосалоны и стоянки это куча
-                      разговоров , бумаг и проверок , это не для меня .
-                      Выскочила реклама "выкуп авто" оставил заявку, перезвонил
-                      очень приятный молодой человек, Договорились о встречи.
-                      Особенно понравилось что ребята заехали за мной и отвезли
-                      в гараж, где осмотрели машину, цена меня устроила.
-                      Проехали в банк где я проверил деньги. Все очень просто и
-                      быстро . Подписали договор купли-продажи .
-                    </p>
-                  </div>
-                  <div class="item__img">
-                    <img src="./images/JGWg5eNIQlc 1 (3).png" alt="" />
-                    <p class="item__col-text">Валентин Иосифович 71 год</p>
-                  </div>
-                  <a class="next" onclick="nextSlide()"
-                    ><i
-                      class="fa fa-chevron-circle-right"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </div>
-
-                <div class="arrow_mobile">
-                  <a class="previous_mobile" onclick="previousSlide()"
-                    ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
-                  ></a>
-                  <a class="next_mobile" onclick="nextSlide()"
-                    ><i
-                      class="fa fa-chevron-circle-right"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </div>
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
               </div>
             </div>
           </section>
