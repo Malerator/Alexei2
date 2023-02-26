@@ -201,6 +201,10 @@
   .red__card-text {
     font-size: 2vmin;
   }
+  .equally,
+  .plus {
+    width: 15px;
+  }
 }
 
 @media screen and (max-width: 400px) {
