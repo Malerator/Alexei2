@@ -186,12 +186,12 @@
 
 @media screen and (max-width: 425px) {
   .grid__container {
-    margin-top: 15vmin;
+    margin-top: 10vmin;
     gap: 2vmin;
   }
   .grid__elem {
     width: 15vmin;
-    height: 25vmin;
+    height: 20vmin;
   }
   .options__header {
     margin-top: 5vmin;
