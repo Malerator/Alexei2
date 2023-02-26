@@ -200,6 +200,9 @@
     font-size: 2.5vmin;
     text-align: center;
   }
+  .grid__elem-red--text {
+    font-size: 2.5vmin;
+  }
 }
 
 @media screen and (max-width: 375px) {
