@@ -255,5 +255,6 @@
     margin: 1vmin auto 0;
     width: 80vw;
     height: 50vh;
+    align-self: start;
   }
 }
