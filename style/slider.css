@@ -1,6 +1,39 @@
+.fon {
+  margin: 3vmin auto 0;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  background-image: url("../images/fon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.5vmin;
+  line-height: 1.7vmin;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.ya {
+  display: block;
+  margin: 0 auto;
+}
+
+.card__img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .itc-slider {
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 70%;
   position: fixed;
   z-index: 0;
 }
@@ -16,68 +49,34 @@
   will-change: transform;
   display: flex;
   align-items: center;
-  flex: 0 0 100%;
-  max-width: 100%;
+  justify-content: space-around;
   counter-increment: slide;
-  height: 45vmin;
+  height: 35vmin;
   position: relative;
+  background-blend-mode: multiply;
+  background-color: #fff;
 }
 
-.slider-page__text {
-  margin-bottom: 3em;
-  display: block;
-  text-align: start;
-  font-size: 4vmin;
-  text-decoration: underline red;
+.slider__wrap-text {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .itc-slider__item--text {
-  margin-left: 34%;
-  display: block;
-  max-width: 60%;
-  font-size: 3vmin;
-  text-align: end;
-  text-shadow: 0 2px 3px rgba(14, 13, 13, 1);
+  font-weight: 700;
+  font-size: 2vmin;
+  line-height: 2.3vmin;
+  color: #000000;
 }
 
-.itc-slider__item::before {
-  content: counter(slide) "/5";
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
-  display: block;
-}
-
-.itc-slider__item:nth-child(1) {
-  background-image: url("../images/013.jpg");
-  background-size: cover;
-}
-
-.itc-slider__item:nth-child(2) {
-  background-image: url("../images/poder.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.itc-slider__item:nth-child(3) {
-  background-image: url("../images/21ef5319dae3e4283e29880c4b81a216.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.itc-slider__item:nth-child(4) {
-  background-image: url("../images/c9d7c36fb71d2fc7ba483cb3fb4b6e39.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.itc-slider__item:nth-child(5) {
-  background-image: url("../images/76241-united-money-photography-bill-dollar-one-dollar-one.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.itc-slider__smoll--text {
+  font-weight: 400;
+  font-size: 1.3vmin;
+  line-height: 1.5vmin;
+  color: #000000;
 }
 
 .itc-slider {
@@ -112,7 +111,7 @@
   text-align: center;
   background: rgb(0 0 0 / 20%);
   border: none;
-  transform: translateY(-50%);
+  transform: translateY(-170%);
   border-radius: 0.3em;
   cursor: pointer;
 }
@@ -154,35 +153,107 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-/* индикаторы */
-.itc-slider__indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1% 0;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+  margin-top: 1vmin;
+}
+
+.footer__logo {
   display: flex;
-  justify-content: center;
-  margin: 0 15%;
-  padding-left: 0;
-  list-style: none;
+  flex-direction: column;
+  align-items: center;
 }
 
-.itc-slider__indicator {
-  flex: 0 1 auto;
-  box-sizing: content-box;
-  width: 30px;
-  height: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  background-color: rgba(64, 62, 62, 0.8);
-  background-clip: padding-box;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+.btn__footer {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.5vmin;
+  border: 0;
+  padding: 3% 10%;
+  border-radius: 5em;
+  text-align: center;
   cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(120deg, darkmagenta, crimson, orange);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
 }
 
-.itc-slider__indicator_active {
-  background-color: orangered;
+.footer__btn-two {
+  font-weight: 700;
+  font-size: 1.5vmin;
+  color: #4434f4;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.footer__tel {
+  text-decoration: none;
+  font-size: 2vmin;
+  color: var(--var-fontcolor);
+}
+
+.footer__btn-two:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 1024px) {
+  .fon {
+    margin: 1vmin auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fon {
+    margin: 5vmin auto 0;
+  }
+  .itc-slider {
+    max-width: 100%;
+  }
+  .itc-slider__item {
+    height: 30vmin;
+  }
+  .itc-slider__btn {
+    width: 4vmin;
+    height: 4vmin;
+  }
+  .footer {
+    margin-top: 4vmin;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .itc-slider__item {
+    height: 50vmin;
+  }
+  .card__img > img {
+    width: 20vmin;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__logo > img {
+    width: 15vmin;
+    height: 7vmin;
+  }
+  .footer__tel {
+    font-size: 2.5vmin;
+  }
+  .itc-slider__btn {
+    top: 45%;
+  }
+  .fon {
+    margin: 1vmin auto 0;
+    width: 80vw;
+    height: 50vh;
+  }
 }
