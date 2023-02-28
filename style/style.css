@@ -402,6 +402,7 @@ h6 {
   }
   h2 {
     font-size: 6vmin;
+    margin-top: 5vmin;
   }
   .panel__nav {
     font-size: 4vmin !important;
