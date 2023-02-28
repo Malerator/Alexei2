@@ -59,7 +59,7 @@ popUp.className = "modal";
 const form = document.querySelector("form");
 form.className = "form";
 
-const btn = document.querySelectorAll(".btn");
+const btn = document.querySelector(".btn");
 
 const closeBtn = document.createElement("button");
 closeBtn.className = "closeModalBtn";
