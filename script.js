@@ -70,6 +70,8 @@ img.src = "./images/close.svg";
 img.width = "20";
 img.height = "20";
 
+const a = document.querySelector(".tab2");
+
 const sendBtn = document.querySelector(".sendBtn");
 
 const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
@@ -88,14 +90,25 @@ closeBtn.addEventListener("click", closeModal);
 popUp.addEventListener("click", closeModal);
 form.addEventListener("click", (event) => event.stopPropagation());
 
+sendBtn.addEventListener("click", openModal2);
+
 function openModal() {
   popUp.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  // document.body.style.overflow = "hidden";
+}
+
+function openModal2() {
+  a.style.display = "flex";
 }
 
 function closeModal() {
   popUp.style.display = "none";
   // document.body.style.overflow = "initial";
+}
+
+function closeModal2() {
+  a.style.display = "none";
+  form.submit();
 }
 
 form.addEventListener("submit", function (el) {
@@ -118,11 +131,10 @@ form.addEventListener("submit", function (el) {
     parse_mode: "html",
     text: message,
   });
-  // form.reset();
+  form.reset();
   closeModal();
-  form.submit();
+  // form.submit();
 });
-
 ///////////////////////////////////////////модальное окно, форма-квиз, валидация////////////////////////////
 
 let currentTab = 0;
@@ -141,6 +153,7 @@ function showTab(n) {
     document.getElementById("nextBtn").style.display = "inline";
   }
   if (n == x.length - 1) {
+    document.getElementById("prevBtn").style.display = "none";
     document.getElementById("nextBtn").style.display = "none";
     sendBtn.style.display = "inline-block";
   } else {

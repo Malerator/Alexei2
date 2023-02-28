@@ -841,7 +841,7 @@
           <div class="info">
             <input
               type="range"
-              min="1980"
+              min="1990"
               max="2023"
               step="1"
               name="year"
@@ -936,6 +936,7 @@
             <label>ваш номер телефона</label>
           </div>
         </div>
+
         <div class="wrapBtn">
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
             НАЗАД
@@ -953,6 +954,12 @@
         </div>
       </div>
     </form>
+    <div onclick="closeModal2()" class="tab2">
+      <img class="thanks" src="./images/thanks2.png" alt="" />
+      <button class="thanks__btn">
+        <i class="fa fa-reply" aria-hidden="true"></i>
+      </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="script.js"></script>
     <script src="slider.js" defer></script>

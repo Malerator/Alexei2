@@ -3,7 +3,7 @@
   position: fixed;
   display: none;
   inset: 0;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgba(237, 225, 225, 0.9);
 }
 
 .login-box {
@@ -14,9 +14,15 @@
   height: 40%;
   padding: 3%;
   transform: translate(-50%, -50%);
-  background-color: #282a2d;
+  background-blend-mode: multiply;
+  background-color: rgb(0, 0, 0, 0.8);
+  background-image: url("../images/auto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   box-sizing: border-box;
   border-radius: 10px;
+  opacity: 0.9;
 }
 
 .login-box .user-box {
@@ -114,8 +120,8 @@
 
 .closeModalBtn {
   position: absolute;
-  right: 405px;
-  top: 210px;
+  right: 28%;
+  top: 27%;
   border: 0;
   background: none;
   cursor: pointer;
@@ -198,10 +204,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transition: 0.3s;
 }
 
-/* input.invalid {
-  border-bottom: 2px solid red;
-} */
-
 .tab {
   display: none;
 }
@@ -211,7 +213,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
   width: 30px;
   margin: 0 2px;
   background-color: rgba(64, 62, 62, 0.8);
-
   border: none;
   display: inline-block;
   opacity: 0.5;
@@ -337,3 +338,107 @@ input[type="range"]::-webkit-slider-thumb:hover {
   color: #fff;
 }
 /* //////////////////////////////////////////////////////// */
+.thanks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.thanks__btn {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: none;
+  border: 0;
+  color: #000;
+}
+
+.tab2 {
+  position: fixed;
+  display: none;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.fa-reply {
+  font-size: 5vmin;
+}
+
+@media screen and (max-width: 1439px) {
+  .thanks__btn {
+    top: 19%;
+    left: 10%;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .login-box {
+    width: 65%;
+    height: 40%;
+  }
+  .closeModalBtn {
+    right: 15%;
+    top: 27%;
+  }
+  .thanks__btn {
+    top: 19%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    padding-top: 6%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-box {
+    padding-top: 7%;
+    width: 70%;
+    height: 30%;
+  }
+  .closeModalBtn {
+    top: 32%;
+    right: 11%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .login-box {
+    width: 95%;
+    height: 25%;
+  }
+  .closeModalBtn {
+    top: 38%;
+    right: 3%;
+  }
+  .login-box .user-box > input {
+    font-size: 3vmin;
+  }
+  .login-box .user-box > label {
+    font-size: 3vmin;
+  }
+  .thanks {
+    width: 95%;
+  }
+  .thanks__btn {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .fa-reply {
+    font-size: 8vmin;
+    color: #f5ebeb;
+  }
+  #prevBtn,
+  #nextBtn,
+  .sendBtn {
+    font-size: 4vmin;
+  }
+}
