@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    /> -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -960,6 +964,16 @@
         <i class="fa fa-reply" aria-hidden="true"></i>
       </button>
     </div>
+    <script type="text/javascript">
+      var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+      if (isAndroid) {
+        document.write(
+          '<meta name="viewport" content="width=device-width,height=' +
+            window.innerHeight +
+            ', initial-scale=1.0">'
+        );
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="script.js"></script>
     <script src="slider.js" defer></script>
