@@ -446,26 +446,30 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 4vmin;
   }
   output {
-    font-size: 4vmin;
+    font-size: 3.2vmin;
   }
 
   input[type="range"] {
     margin: 2vmin auto 2vmin;
-    padding: 2vmin;
     border-radius: 2vmin;
   }
 
   input[type="range"]::-webkit-slider-runnable-track {
-    height: 1.2vmin;
+    height: 7vmin;
     -webkit-appearance: none;
     color: #565c5a;
   }
 
   input[type="range"]::-webkit-slider-thumb {
-    width: 1.2vmin;
-    height: 1.2vmin;
+    width: 7vmin;
+    height: 7vmin;
     border-radius: 50%;
-    box-shadow: 0 0 0 2vmin #0d0d0d;
+    box-shadow: 0 0 0 0 #0d0d0d;
+    transition: 0.3s;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #ebe8ee;
+    box-shadow: 0 0 0 3vmin red;
     transition: 0.3s;
   }
   .info p {
