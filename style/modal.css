@@ -410,6 +410,42 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 }
 
+@media screen and (max-device-height: 900px) and (max-device-width: 415px) and (orientation: portrait) {
+  .login-box {
+    box-sizing: border-box;
+    top: 20%;
+    width: 95vw;
+    height: 25vh;
+  }
+  .closeModalBtn {
+    top: 38%;
+    right: 3%;
+  }
+  .login-box .user-box > input {
+    font-size: 3vmin;
+  }
+  .login-box .user-box > label {
+    font-size: 3vmin;
+  }
+  .thanks {
+    width: 95%;
+  }
+  .thanks__btn {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .fa-reply {
+    font-size: 8vmin;
+    color: #f5ebeb;
+  }
+  #prevBtn,
+  #nextBtn,
+  .sendBtn {
+    font-size: 4vmin;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .login-box {
     box-sizing: border-box;
