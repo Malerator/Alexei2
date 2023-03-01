@@ -1,3 +1,7 @@
+window.visualViewport.addEventListener("resize", (event) =>
+  console.info(event.target)
+);
+
 ////////////////////////////////////запрет увеличения уменьшения/////////////////////////////////////////////////
 document
   .querySelector("body")

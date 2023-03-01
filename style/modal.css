@@ -412,8 +412,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 @media screen and (max-width: 425px) {
   .login-box {
-    width: 95%;
-    height: 25%;
+    box-sizing: border-box;
+    top: 20%;
+    width: 95vw;
+    height: 25vh;
   }
   .closeModalBtn {
     top: 38%;
