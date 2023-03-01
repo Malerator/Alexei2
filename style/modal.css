@@ -410,7 +410,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 }
 
-@media screen and (max-device-height: 900px) and (max-device-width: 415px) and (orientation: portrait) {
+@media screen and (max-device-height: 900px) and (max-device-width: 415px) and (orientation: landscape) {
   .login-box {
     box-sizing: border-box;
     top: 20%;
