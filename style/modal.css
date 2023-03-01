@@ -2,6 +2,7 @@
   font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   position: fixed;
   display: none;
+  overflow: hidden;
   inset: 0;
   background-color: rgba(237, 225, 225, 0.9);
 }
