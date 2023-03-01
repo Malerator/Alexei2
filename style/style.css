@@ -374,7 +374,7 @@ h6 {
 
 @media screen and (max-width: 425px) {
   .container {
-    padding: 7%;
+    padding: 8%;
   }
   h1 {
     font-size: 6vmin;
