@@ -418,8 +418,8 @@ input[type="range"]::-webkit-slider-thumb:hover {
     height: 40vh;
   }
   .closeModalBtn {
-    top: 38%;
-    right: 3%;
+    top: 47%;
+    right: 2%;
   }
   .login-box .user-box > input {
     padding-left: 2vmin;
@@ -444,5 +444,31 @@ input[type="range"]::-webkit-slider-thumb:hover {
   #nextBtn,
   .sendBtn {
     font-size: 4vmin;
+  }
+  output {
+    font-size: 4vmin;
+  }
+
+  input[type="range"] {
+    margin: 2vmin auto 2vmin;
+    padding: 2vmin;
+    border-radius: 2vmin;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 1.2vmin;
+    -webkit-appearance: none;
+    color: #565c5a;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 1.2vmin;
+    height: 1.2vmin;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2vmin #0d0d0d;
+    transition: 0.3s;
+  }
+  .info p {
+    font-size: 3vmin;
   }
 }
