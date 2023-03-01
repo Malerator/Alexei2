@@ -1,13 +1,13 @@
-var body = document.body;
-if (body.requestFullscreen) {
-  body.requestFullscreen();
-} else if (body.webkitrequestFullscreen) {
-  body.webkitrequestFullscreen();
-} else if (body.mozrequestFullscreen) {
-  body.mozrequestFullscreen();
-} else if (body.msrequestFullscreen) {
-  body.msrequestFullscreen();
-}
+// var body = document.body;
+// if (body.requestFullscreen) {
+//   body.requestFullscreen();
+// } else if (body.webkitrequestFullscreen) {
+//   body.webkitrequestFullscreen();
+// } else if (body.mozrequestFullscreen) {
+//   body.mozrequestFullscreen();
+// } else if (body.msrequestFullscreen) {
+//   body.msrequestFullscreen();
+// }
 ////////////////////////////////////запрет увеличения уменьшения/////////////////////////////////////////////////
 document
   .querySelector("body")
