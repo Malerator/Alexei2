@@ -1,5 +1,6 @@
-window.visualViewport.addEventListener("resize", (event) =>
-  console.info(event.target)
+window.visualViewport.addEventListener(
+  "resize",
+  (event) => (document.body.style.overflow = "hidden")
 );
 
 ////////////////////////////////////запрет увеличения уменьшения/////////////////////////////////////////////////
@@ -29,10 +30,11 @@ document.addEventListener(
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-// window.addEventListener("resize", () => {
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-// });
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  document.body.style.overflow = "hidden";
+});
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
