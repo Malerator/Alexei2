@@ -15,7 +15,7 @@
   left: 50%;
   width: 40%;
   height: 40%;
-  padding: 3%;
+  padding: 3% 3% 3% 3%;
   transform: translate(-50%, -50%);
   background-blend-mode: multiply;
   background-color: rgb(0, 0, 0, 0.8);
@@ -213,7 +213,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .step {
   height: 5px;
-  width: 30px;
+  width: 20px;
   margin: 0 2px;
   background-color: rgba(64, 62, 62, 0.8);
   border: none;
@@ -249,10 +249,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .check__header {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 2.5vmin;
   color: red;
 }
@@ -274,6 +270,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.wrap_check3 {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 0 0 15%;
+}
+
+.check1 {
+  display: flex;
+  align-items: center;
+  gap: 4%;
 }
 
 .check__item {
@@ -492,16 +500,20 @@ input[type="range"]::-webkit-slider-thumb:hover {
     margin-top: 15%;
   }
   .check__header {
-    font-size: 3vmin;
+    font-size: 4.5vmin;
   }
   .check__item {
     font-size: 2.5vmin;
   }
   .user-box:nth-child(1) {
     margin-top: 15vmin;
+    margin-bottom: 10vmin;
   }
   .login-box .user-box > input:focus ~ label,
   .login-box .user-box > input:valid ~ label {
     font-size: 2.5vmin;
+  }
+  .check1 {
+    margin-top: 5%;
   }
 }
