@@ -1,13 +1,3 @@
-// var body = document.body;
-// if (body.requestFullscreen) {
-//   body.requestFullscreen();
-// } else if (body.webkitrequestFullscreen) {
-//   body.webkitrequestFullscreen();
-// } else if (body.mozrequestFullscreen) {
-//   body.mozrequestFullscreen();
-// } else if (body.msrequestFullscreen) {
-//   body.msrequestFullscreen();
-// }
 ////////////////////////////////////запрет увеличения уменьшения/////////////////////////////////////////////////
 document
   .querySelector("body")
@@ -32,14 +22,15 @@ document.addEventListener(
   false
 );
 ////////////////////////////////////////////установка адаптивной высоты экрана////////////////////////////////////
-let vh = window.innerHeight * 0.01;
+let vh = window.outerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
+  let vh = window.outerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   document.body.style.overflow = "hidden";
 });
+
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
