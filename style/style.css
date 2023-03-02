@@ -427,8 +427,9 @@ h6 {
   }
 }
 
-@media (orientation: landscape) and (max-heigth: 1080px) {
+@media screen and (max-heigth: 915px) {
   .panel {
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
 }
