@@ -482,7 +482,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .check {
     margin-top: 20%;
   }
-
+  .check__header {
+    font-size: 3vmin;
+  }
   .check__item {
     font-size: 2.5vmin;
   }

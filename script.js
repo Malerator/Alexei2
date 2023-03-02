@@ -163,7 +163,6 @@ function showTab(n) {
     document.getElementById("nextBtn").style.display = "inline";
   }
   if (n == x.length - 1) {
-    document.getElementById("prevBtn").style.display = "none";
     document.getElementById("nextBtn").style.display = "none";
     sendBtn.style.display = "inline-block";
   } else {
