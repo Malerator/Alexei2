@@ -59,7 +59,7 @@
   top: -20px;
   left: 0;
   color: red;
-  font-size: 1.5vmin;
+  font-size: 2.5vmin;
 }
 
 /* ///////////////////// кнопки */
@@ -358,6 +358,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   background: none;
   border: 0;
   color: #000;
+  cursor: pointer;
 }
 
 .tab2 {
@@ -488,5 +489,8 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
   .check__item {
     font-size: 2.5vmin;
+  }
+  .user-box:nth-child(1) {
+    margin-top: 15vmin;
   }
 }
