@@ -432,7 +432,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     width: 95%;
   }
   .thanks__btn {
-    top: 85%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%);
   }
