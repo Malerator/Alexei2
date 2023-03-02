@@ -31,12 +31,12 @@ window.addEventListener("resize", () => {
   document.body.style.overflow = "hidden";
 });
 
-let vhAndroid = window.outerHeight * 0.01;
-document.documentElement.style.setProperty("--vh-andr", `${vh}px`);
+let vh1 = window.outerHeight * 0.01;
+document.documentElement.style.setProperty("--va", `${vh}px`);
 
 window.addEventListener("resize", () => {
-  let vhAndroid = window.outerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh-andr", `${vh}px`);
+  let vh = window.outerHeight * 0.01;
+  document.documentElement.style.setProperty("--va", `${vh}px`);
   document.body.style.overflow = "hidden";
 });
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
