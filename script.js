@@ -10,7 +10,7 @@ function preventScroll(e) {
   return false;
 }
 
-document.addEventListener(
+document.body.addEventListener(
   "touchmove",
   function (event) {
     event = event.originalEvent || event;
