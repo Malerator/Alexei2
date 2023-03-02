@@ -448,6 +448,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   #nextBtn,
   .sendBtn {
     font-size: 4vmin;
+    font-weight: 900;
   }
   output {
     font-size: 3.2vmin;
