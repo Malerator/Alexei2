@@ -479,4 +479,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .info p {
     font-size: 3vmin;
   }
+  .check {
+    margin-top: 20%;
+  }
+
+  .check__item {
+    font-size: 2.5vmin;
+  }
 }
