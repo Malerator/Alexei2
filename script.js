@@ -31,6 +31,14 @@ window.addEventListener("resize", () => {
   document.body.style.overflow = "hidden";
 });
 
+let vh1 = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vios", `${vh}px`);
+
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vios", `${vh}px`);
+  document.body.style.overflow = "hidden";
+});
 //////////////////////////////выделение навигации при загрузке страницы//////////////////////////////////////////
 window.onload = changeOnLoad;
 const tar = document.querySelectorAll(".panel__nav");
