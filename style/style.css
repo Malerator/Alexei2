@@ -427,11 +427,11 @@ h6 {
   }
 }
 
-/* @media screen and (max-heigth: 1080px) {
+@media (orientation: landscape) and (max-heigth: 1080px) {
   .panel {
-    height: calc(100vh - 300px);
+    height: calc(var(--vh, 1vh) * 100);
   }
-} */
+}
 
 /* типа запрет ротации моб устройства*/
 @media (orientation: landscape) and (max-width: 768px) {
