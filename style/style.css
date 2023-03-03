@@ -428,7 +428,7 @@ h6 {
 }
 
 /* iPhone 12 Pro Max, 13 Pro Max (альбомный режим) */
-@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 812px) {
+@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 600px) {
   .panel {
     height: 70vh;
     height: calc(var(--vh, 1vh) * 70);
