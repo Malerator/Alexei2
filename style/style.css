@@ -433,7 +433,7 @@ h6 {
     /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 100);
     overflow-y: auto;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 }
 /* типа запрет ротации моб устройства*/
