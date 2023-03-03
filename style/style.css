@@ -427,13 +427,13 @@ h6 {
   }
 }
 
-@media (orientation: landscape) and (max-heigth: 2340px) {
+/* iPhone 12 Pro Max, 13 Pro Max (альбомный режим) */
+@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
   .panel {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
 }
-
 /* типа запрет ротации моб устройства*/
 @media (orientation: landscape) and (max-width: 768px) {
   body {
@@ -460,7 +460,3 @@ h6 {
     height: 200px;
   }
 }
-
-/* @media screen and (max-device-height:900px) and (max-device-width:415px) and (orientation:portrait){} */
-
-/* @media screen and (max-device-width:415px) and (orientation:landscape){portrait rules} */
