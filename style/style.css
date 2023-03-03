@@ -432,7 +432,7 @@ h6 {
   .panel {
     height: 70vh;
     height: calc(var(--vh, 1vh) * 70);
-    overflow-y: auto;
+    overflow-x: scroll;
   }
 }
 /* типа запрет ротации моб устройства*/
