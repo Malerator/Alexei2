@@ -173,7 +173,7 @@ iframe {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .head__info {
     font-size: 3.5vmin;
     margin-top: 1.5%;

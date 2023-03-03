@@ -189,7 +189,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .grid__container {
     margin-top: 10vmin;
     gap: 2vmin;

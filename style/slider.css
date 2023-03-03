@@ -214,7 +214,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .itc-slider__item {
     height: 50vmin;
   }
