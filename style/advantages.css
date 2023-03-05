@@ -81,3 +81,14 @@
     margin-bottom: 15%;
   }
 }
+
+@media screen and (max-height: 570px) {
+  .advantages__text {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .advantages__card-subwrap {
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+}

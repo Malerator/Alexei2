@@ -228,3 +228,22 @@
     margin-bottom: 10vmin;
   }
 }
+
+@media screen and (max-height: 780px) {
+  .four-eye {
+    width: 48vmin;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .four-eye {
+    width: 32vmin;
+  }
+  .panel3__heder {
+    line-height: 1.1;
+    margin-bottom: 2vmin;
+  }
+  .panel3__wrap-item {
+    margin-bottom: 4vmin;
+  }
+}

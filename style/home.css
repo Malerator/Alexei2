@@ -257,3 +257,32 @@
     width: 200px;
   }
 }
+
+@media screen and (max-height: 780px) {
+  .logo {
+    width: 100px;
+    height: 33px;
+    background-image: url("../images/logo 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .wrap__bullit {
+    margin-bottom: 10vmin;
+  }
+}
+@media screen and (max-height: 570px) {
+  .wrap__bullit {
+    margin: 5vmin 0;
+  }
+  .btn_info {
+    margin-top: 13vmin;
+  }
+  .main__head {
+    margin-bottom: 5vmin;
+  }
+  .box__img {
+    right: -30%;
+    width: 200px;
+  }
+}

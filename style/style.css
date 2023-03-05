@@ -25,17 +25,12 @@
   -webkit-user-select: none;
 }
 
-/* html {
-  height: 100vh;
-} */
-
 body {
   background-repeat: repeat;
   background-color: var(--var-bgcolor);
   color: var(--var-fontcolor);
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   margin: 0;
-  /* height: 100%; */
   overflow: hidden;
   perspective: 1000px;
   text-transform: uppercase;
@@ -84,6 +79,7 @@ h6 {
 }
 
 .container {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 3% 7%;
 }
@@ -451,5 +447,34 @@ h6 {
     text-align: center;
     width: 80%;
     height: 200px;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .panel__zoom {
+    width: 20px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  h1 {
+    font-size: 4vmin;
+  }
+  h2 {
+    font-size: 4vmin;
+    margin-top: 2vmin;
+  }
+  h4 {
+    font-size: 4vmin;
+  }
+  h5 {
+    font-size: 4.5vmin;
+  }
+  h6 {
+    font-size: 4.5vmin;
+  }
+  .panel__zoom {
+    top: 15%;
   }
 }

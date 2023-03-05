@@ -76,7 +76,7 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -khtml-transform: translate(-50%, -50%);
-  color: #fff;
+  color: #f5efef;
 }
 
 .product__text .description__prod p {
@@ -165,5 +165,23 @@
 @media screen and (max-width: 390px) {
   .panel4__footer {
     margin-top: 18%;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .panel4__header {
+    font-size: 4vmin;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .panel4__footer {
+    font-size: 3vmin;
+  }
+  .row {
+    margin-top: 5vmin;
+  }
+  .panel4__header {
+    margin-bottom: 3vmin;
   }
 }

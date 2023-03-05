@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  width: 15vmin;
+  width: 22vmin;
   height: 21vmin;
   background-color: #f6f4d3;
 }
@@ -85,7 +85,7 @@
 .arrow1 {
   position: absolute;
   top: 15%;
-  left: 60%;
+  left: 78%;
   width: 150px;
   height: 150px;
   background-image: url("../images/Arrow\ 1.svg");
@@ -98,7 +98,7 @@
 .arrow2 {
   position: absolute;
   top: 55%;
-  left: 60%;
+  left: 78%;
   width: 150px;
   height: 150px;
   background-image: url("../images/Arrow\ 1.svg");
@@ -121,6 +121,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  margin-right: 10%;
 }
 
 iframe {
@@ -213,5 +214,20 @@ iframe {
   }
   .card__head-text {
     font-size: 1.5vmin;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  iframe {
+    width: 74.5vmin;
+    height: 42vmin;
+  }
+}
+@media screen and (max-height: 570px) {
+  .head__info {
+    font-size: 3vmin;
+  }
+  .video__img {
+    height: 35vmin;
   }
 }

@@ -241,3 +241,20 @@
     align-self: start;
   }
 }
+
+@media screen and (max-height: 570px) {
+  .fon {
+    height: 84vmin;
+    margin-top: 5vmin;
+  }
+  .h2 {
+    font-size: 5.5vmin;
+  }
+  .message__img {
+    width: 20px;
+    height: 18px;
+  }
+  .ya {
+    height: 50px;
+  }
+}

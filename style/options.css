@@ -2,6 +2,7 @@
   font-size: 3vmin;
   text-align: left;
   margin-top: 5vmin;
+  text-align: center;
 }
 
 .grid__container {
@@ -217,5 +218,24 @@
   }
   .grid__container {
     gap: 4vmin;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .grid__elem {
+    height: 16vmin;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .grid__elem {
+    margin: 0;
+  }
+  .options__header {
+    margin-top: 3vmin;
+  }
+  .grid__container {
+    gap: 2.3vmin;
+    margin-top: 6vmin;
   }
 }
