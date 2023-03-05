@@ -258,20 +258,23 @@
   }
 }
 
+@media screen and (min-height: 840px) {
+  .wrap__bullit {
+    margin-bottom: 10vmin;
+  }
+}
+
 @media screen and (max-height: 780px) {
   .logo {
-    width: 100px;
-    height: 33px;
-    background-image: url("../images/logo 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    width: 150px;
+    height: 35px;
   }
   .wrap__bullit {
     margin-bottom: 10vmin;
   }
 }
-@media screen and (max-height: 570px) {
+
+@media screen and (max-height: 568px) {
   .wrap__bullit {
     margin: 5vmin 0;
   }
