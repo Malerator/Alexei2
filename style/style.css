@@ -36,6 +36,9 @@ body {
   text-transform: uppercase;
   touch-action: pan-y;
   touch-action: pan-x;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 h1 {

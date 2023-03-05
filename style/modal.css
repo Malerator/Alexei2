@@ -1,4 +1,4 @@
-body.modal {
+.modal {
   font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   display: none;
   overflow: hidden;
@@ -7,10 +7,6 @@ body.modal {
   touch-action: pan-y;
   touch-action: pan-x;
   position: fixed;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
 }
 
 .login-box {
