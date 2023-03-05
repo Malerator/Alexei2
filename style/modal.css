@@ -26,6 +26,8 @@
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
+  touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .login-box .user-box {
