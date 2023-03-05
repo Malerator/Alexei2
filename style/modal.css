@@ -1,12 +1,16 @@
 .modal {
   font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
-  position: fixed;
   display: none;
   overflow: hidden;
   inset: 0;
   background-color: rgba(237, 225, 225, 0.9);
   touch-action: pan-y;
   touch-action: pan-x;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .login-box {
