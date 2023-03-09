@@ -173,6 +173,7 @@ input:-webkit-autofill:active {
   position: absolute;
   top: -55%;
   font-size: 2vmin;
+  color: #fff;
 }
 
 output {
