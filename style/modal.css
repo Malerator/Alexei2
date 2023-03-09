@@ -533,6 +533,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
     padding-top: 5%;
   }
   .info {
-    margin-top: 2vmin;
+    margin-top: 1.5vmin;
   }
 }
