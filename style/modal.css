@@ -499,9 +499,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .info p {
     font-size: 3vmin;
   }
-  .check {
-    margin-top: 2vmin;
-  }
   .check__header {
     font-size: 4.5vmin;
   }
@@ -527,7 +524,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     margin-bottom: 10vmin;
   }
   .check {
-    margin-top: 5%;
+    margin-top: 2vmin;
   }
   .login-box {
     padding-top: 5%;
