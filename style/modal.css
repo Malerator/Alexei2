@@ -522,7 +522,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 @media screen and (max-height: 570px) {
   .login-box {
-    height: 50%;
-    top: 25%;
+    height: 40%;
   }
 }
