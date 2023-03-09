@@ -532,7 +532,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .login-box {
     padding-top: 5%;
   }
-  .info {
-    margin-top: 1vmin;
+  .info > p {
+    top: -45%;
   }
 }
