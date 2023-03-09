@@ -525,4 +525,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     margin-top: 5vmin;
     margin-bottom: 10vmin;
   }
+  .check {
+    margin-top: 10%;
+  }
 }
