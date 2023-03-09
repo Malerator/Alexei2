@@ -22,14 +22,14 @@ document.body.addEventListener(
   false
 );
 ////////////////////////////////////////////установка адаптивной высоты экрана////////////////////////////////////
-let vh = window.outerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
+// let vh = window.outerHeight * 0.01;
+// document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-window.addEventListener("resize", () => {
-  let vh = window.outerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-  document.body.style.overflow = "hidden";
-});
+// window.addEventListener("resize", () => {
+//   let vh = window.outerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+//   document.body.style.overflow = "hidden";
+// });
 
 let vh1 = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vios", `${vh1}px`);
