@@ -240,6 +240,9 @@
     height: 100vmin;
     align-self: start;
   }
+  .itc-slider__smoll--text {
+    font-size: x-large;
+  }
 }
 
 @media screen and (max-height: 570px) {
