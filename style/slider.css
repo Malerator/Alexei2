@@ -241,7 +241,7 @@
     align-self: start;
   }
   .itc-slider__smoll--text {
-    font-size: x-large;
+    font-size: 3vmin;
   }
 }
 
