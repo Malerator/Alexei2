@@ -99,7 +99,6 @@
   transition: none;
 }
 
-/* кнопки влево и вправо */
 .itc-slider__btn {
   position: absolute;
   top: 50%;
