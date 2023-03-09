@@ -520,6 +520,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 }
 
-/* @media screen and (max-height: 570px) {
-  
-} */
+@media screen and (max-height: 570px) {
+  .user-box:nth-child(1) {
+    margin-top: 5vmin;
+    margin-bottom: 10vmin;
+  }
+}
