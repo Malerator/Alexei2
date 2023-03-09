@@ -278,7 +278,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .wrap_check3 {
   display: flex;
   flex-direction: column;
-  margin: 4% 0 0 15%;
+  margin: 2% 0 0 15%;
 }
 
 .check1 {
@@ -531,8 +531,5 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
   .info > p {
     top: -45%;
-  }
-  .check1 {
-    margin: 0;
   }
 }
