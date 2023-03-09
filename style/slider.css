@@ -232,7 +232,18 @@
     font-size: 2.5vmin;
   }
   .itc-slider__btn {
-    top: 45%;
+    bottom: 45%;
+  }
+  .itc-slider__btn_prev {
+    left: -10%;
+  }
+
+  .itc-slider__btn_next {
+    right: -10%;
+  }
+  .itc-slider__btn {
+    width: 6vmin;
+    height: 6vmin;
   }
   .fon {
     margin: 1vmin auto 0;
@@ -241,7 +252,8 @@
     align-self: start;
   }
   .itc-slider__smoll--text {
-    font-size: 3vmin;
+    font-size: 1.8vmin;
+    line-height: 2vmin;
   }
 }
 
