@@ -532,7 +532,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .info > p {
     top: -45%;
   }
-  .check {
-    margin-top: 1vmin;
+  .wrap_check3 {
+    margin-top: 0;
   }
 }
