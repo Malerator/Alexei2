@@ -259,13 +259,6 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .box__img {
-    right: -30%;
-    width: 200px;
-  }
-}
-
 @media screen and (max-height: 844px) and (orientation: portrait) {
   .wrap__bullit {
     margin-bottom: 15vmin;
@@ -286,7 +279,7 @@
   }
 }
 
-@media screen and (max-height: 570px) {
+@media screen and (max-height: 570px) and (orientation: portrait) {
   .logo {
     width: 150px;
     height: 35px;
