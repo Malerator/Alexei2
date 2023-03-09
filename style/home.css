@@ -279,7 +279,7 @@
   }
 }
 
-@media screen and (max-height: 570px) and (orientation: portrait) {
+@media screen and (max-height: 570px) {
   .logo {
     width: 150px;
     height: 35px;
