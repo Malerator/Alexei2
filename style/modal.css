@@ -519,3 +519,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
     margin-top: 5%;
   }
 }
+
+@media screen and (max-height: 570px) {
+  .login-box {
+    height: 50%;
+  }
+}
