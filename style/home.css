@@ -259,6 +259,13 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .box__img {
+    right: -30%;
+    width: 200px;
+  }
+}
+
 @media screen and (max-height: 844px) and (orientation: portrait) {
   .wrap__bullit {
     margin-bottom: 15vmin;
