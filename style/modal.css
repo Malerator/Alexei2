@@ -500,7 +500,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 3vmin;
   }
   .check {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .check__header {
     font-size: 4.5vmin;
