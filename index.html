@@ -115,7 +115,7 @@
                 </div>
               </div>
               <div class="wrap__video">
-                <div class="video__img"></div>
+                <!-- <div class="video__img"></div> -->
                 <iframe
                   src="https://www.youtube.com/embed/gIhp2c0wDFk"
                   title="YouTube
@@ -194,13 +194,13 @@
               <div class="home__info">
                 <div class="home__title">
                   <h1>
-                    <span class="h1">Купим ваш авто</span>
-                    за 93% рыночной цены
-                    <span class="h1">в течении 120 минут</span>
+                    Выкупим ваш авто
+                    <span class="h1"> за 95% рыночной цены </span>
+                    уже сегодня,
+                    <span class="h1"> деньги сразу</span>
                   </h1>
                   <p class="home__title-p">
-                    За счёт работы без аренды и с малым штатом <br />
-                    сотрудников
+                    За счёт работы без аренды и с малым штатом сотрудников
                   </p>
                 </div>
               </div>
@@ -831,6 +831,17 @@
     <form>
       <div class="login-box">
         <div class="tab">
+          <div id="phone" class="user-box">
+            <input
+              class="maskphone"
+              name="tel"
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              required=""
+            />
+            <label>ваш номер телефона</label>
+          </div>
+        </div>
+        <div class="tab">
           <div class="user-box">
             <input type="text" name="mark" required="" />
             <label>марка</label>
@@ -1011,21 +1022,7 @@
             </div>
           </div>
         </div>
-        <div class="tab">
-          <div class="user-box">
-            <input type="text" name="fName" required="" />
-            <label>ваше имя</label>
-          </div>
-          <div class="user-box">
-            <input
-              class="maskphone"
-              name="tel"
-              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-              required=""
-            />
-            <label>ваш номер телефона</label>
-          </div>
-        </div>
+
         <div class="wrapBtn">
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
             НАЗАД

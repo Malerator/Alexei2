@@ -13,19 +13,19 @@
 }
 
 .panel3__wrap-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 3vmin;
 }
 
 .panel3__cross {
-  width: 17vmin;
-  height: 17vmin;
+  width: 15vmin;
+  height: 15vmin;
 }
 
 .panel3__check {
-  width: 17vmin;
-  height: 17vmin;
+  width: 15vmin;
+  height: 15vmin;
 }
 
 .panel3__red-card {

@@ -217,6 +217,7 @@
 @media screen and (max-width: 428px) {
   .itc-slider__item {
     height: 70vmin;
+    width: 20vmin;
   }
   .card__img > img {
     width: 20vmin;

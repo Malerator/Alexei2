@@ -1,4 +1,4 @@
-////////////////////////////////////запрет увеличения уменьшения/////////////////////////////////////////////////
+////////////////////////////////////запрет масштабирования/////////////////////////////////////////////////
 document
   .querySelector("body")
   .addEventListener("wheel", preventScroll, { passive: false });
@@ -21,16 +21,7 @@ document.body.addEventListener(
   },
   false
 );
-////////////////////////////////////////////установка адаптивной высоты экрана////////////////////////////////////
-// let vh = window.outerHeight * 0.01;
-// document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-// window.addEventListener("resize", () => {
-//   let vh = window.outerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-//   document.body.style.overflow = "hidden";
-// });
-
+////////////////////////////////////////////установка адаптивной высоты экрана с вычетом панели для ввода адреса//
 let vh1 = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vios", `${vh1}px`);
 
@@ -134,7 +125,7 @@ form.addEventListener("submit", function (el) {
   message += `<b>Пробег:  </b>${Math.round(this.run.value)}\n`;
   message += `<b>Год выпуска:  </b>${this.year.value}\n`;
   message += `<b>Состояние/способ связи: </b>${checkState}\n`;
-  message += `<b>Имя:  </b>${this.fName.value}\n`;
+  // message += `<b>Имя:  </b>${this.fName.value}\n`;
   message += `<b>Телефон:  </b>${this.tel.value}`;
   axios.post(URL, {
     chat_id: CHAT_ID,

@@ -64,6 +64,12 @@
   font-size: 1.5vmin;
 }
 
+#phone {
+  position: absolute;
+  top: 40%;
+  width: 80%;
+}
+
 /* ///////////////////// кнопки */
 
 #nextBtn {

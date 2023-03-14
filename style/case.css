@@ -54,17 +54,17 @@
 }
 
 .product__text {
-  padding-top: 6%;
+  padding-top: 10%;
 }
 
 .product__text .category {
   text-align: center;
   font-family: "Gilroy-Bold", Arial, Helvetica, sans-serif;
   font-size: 2vmin;
-  text-shadow: 0 1px 2px rgba(14, 13, 13, 1);
   padding: 0.4vmin;
   margin-bottom: 30%;
   position: relative;
+  text-shadow: 1px 1px 1px rgba(14, 13, 13, 1);
 }
 
 .product__text .category > * {
@@ -76,7 +76,7 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -khtml-transform: translate(-50%, -50%);
-  color: #f5efef;
+  color: #f0ecec;
 }
 
 .product__text .description__prod p {
@@ -93,10 +93,11 @@
 }
 
 .panel4__footer {
-  margin-top: 10%;
+  margin-top: 8%;
   text-decoration: underline;
   text-decoration-color: red;
   font-size: 3vmin;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

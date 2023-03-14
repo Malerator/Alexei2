@@ -31,8 +31,6 @@
 }
 
 .grid__elem:nth-child(2) {
-  background-blend-mode: multiply;
-  background-color: #fafd83;
   background-image: url("../images/logo 1.png");
   background-repeat: no-repeat;
   background-size: contain;
