@@ -20,7 +20,7 @@
   box-sizing: border-box;
   width: 27vmin;
   height: 21vmin;
-  background-color: #f6f4d3;
+  background-color: rgb(218, 215, 215);
 }
 
 .num {
