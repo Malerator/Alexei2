@@ -182,6 +182,7 @@
   }
   .panel3__heder {
     font-size: 2.5vmin;
+    margin-bottom: 1.5vmin;
   }
   .panel3__item {
     align-self: center;
