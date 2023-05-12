@@ -172,7 +172,7 @@
 
 @media screen and (max-width: 425px) {
   .panel3__wrap-item {
-    margin-bottom: 2.5vmin;
+    margin-bottom: 1.5vmin;
     flex-direction: column;
   }
   .four-eye {
