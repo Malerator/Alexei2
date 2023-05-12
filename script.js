@@ -38,7 +38,7 @@ function changeOnLoad() {
   const a = setTimeout(function () {
     tar.forEach((el) => el.classList.remove("panel__nav"));
     tar.forEach((el) => el.classList.add("panel__nav-active"));
-  }, 400);
+  }, 10);
   const b = setTimeout(function () {
     tar.forEach((el) => el.classList.remove("panel__nav-active"));
     tar.forEach((el) => el.classList.add("panel__nav"));
