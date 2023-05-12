@@ -78,6 +78,7 @@
   background-size: 200% 100%;
   background-position: 100% 0;
   transition: background-position 0.5s;
+  color: #000;
 }
 
 .btn:hover {
