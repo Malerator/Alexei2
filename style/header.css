@@ -177,7 +177,7 @@ iframe {
 @media screen and (max-width: 428px) {
   .head__info {
     font-size: 3.5vmin;
-    margin-top: 1.5%;
+    margin-top: 8%;
   }
   .wrap__video {
     flex-direction: column;
@@ -190,9 +190,20 @@ iframe {
     height: 44.8vmin;
   }
   .header__card {
+    box-sizing: border-box;
     width: 27vmin;
-    height: 25vmin;
+    height: 45vmin;
   }
+
+  .head__num {
+    font-size: 14vmin;
+  }
+
+  .num {
+    width: 16vmin;
+    height: 16vmin;
+  }
+
   .arrow1 {
     display: none;
   }
@@ -202,18 +213,20 @@ iframe {
   }
   .wrap__header-card {
     flex-direction: initial;
+    margin: 7vmin 0 10vmin;
   }
   .video {
     flex-direction: column;
   }
   .card__head-red-text {
-    font-size: 1.2vmin;
+    font-size: 1.7vmin;
+    line-height: 1.7;
   }
   .card__head-item {
-    font-size: 2.2vmin;
+    font-size: 3.2vmin;
   }
   .card__head-text {
-    font-size: 1.5vmin;
+    font-size: 2.5vmin;
   }
 }
 
