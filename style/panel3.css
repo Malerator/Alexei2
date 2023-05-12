@@ -172,8 +172,8 @@
 
 @media screen and (max-width: 425px) {
   .panel3__wrap-item {
-    grid-template-columns: 1fr;
-    margin-bottom: 3vmin;
+    margin-bottom: 6vmin;
+    flex-direction: column;
   }
   .four-eye {
     align-self: center;
@@ -186,6 +186,7 @@
   .panel3__item {
     align-self: center;
     justify-self: center;
+    margin-bottom: 4vmin;
   }
   .panel3__cross {
     width: 13vmin;
