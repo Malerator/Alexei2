@@ -190,8 +190,6 @@ iframe {
     width: 45vmin;
   }
   iframe {
-    /* width: 80vmin;
-    height: 44.8vmin; */
     width: 100vmin;
     height: 44.8vmin;
   }
@@ -238,9 +236,7 @@ iframe {
 
 @media screen and (max-height: 780px) {
   iframe {
-    /* width: 74.5vmin; */
-    width: 100vmin;
-
+    width: 74.5vmin;
     height: 42vmin;
   }
 }
