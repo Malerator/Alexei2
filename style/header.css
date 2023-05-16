@@ -190,7 +190,9 @@ iframe {
     width: 45vmin;
   }
   iframe {
-    width: 80vmin;
+    /* width: 80vmin;
+    height: 44.8vmin; */
+    width: 90vmin;
     height: 44.8vmin;
   }
   .header__card {
