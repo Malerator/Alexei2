@@ -213,7 +213,7 @@ iframe {
   }
   .wrap__header-card {
     flex-direction: initial;
-    margin: 7vmin 0 6vmin;
+    margin: 7vmin 0 3vmin;
   }
   .video {
     flex-direction: column;
