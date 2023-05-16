@@ -189,10 +189,10 @@ iframe {
   .video__img {
     width: 45vmin;
   }
-  iframe {
+  /* iframe {
     width: 100vmin;
     height: 44.8vmin;
-  }
+  } */
   .header__card {
     box-sizing: border-box;
     width: 27vmin;
