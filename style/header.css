@@ -198,20 +198,16 @@ iframe {
     width: 27vmin;
     height: 45vmin;
   }
-
   .head__num {
     font-size: 14vmin;
   }
-
   .num {
     width: 16vmin;
     height: 16vmin;
   }
-
   .arrow1 {
     display: none;
   }
-
   .arrow2 {
     display: none;
   }
@@ -236,8 +232,10 @@ iframe {
 
 @media screen and (max-height: 780px) {
   iframe {
-    width: 74.5vmin;
-    height: 42vmin;
+    /* width: 74.5vmin;
+    height: 42vmin; */
+    width: 90vmin;
+    height: 50vmin;
   }
 }
 @media screen and (max-height: 570px) {
