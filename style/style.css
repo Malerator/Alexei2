@@ -1,6 +1,6 @@
 :root {
   /* --var-bgcolor: rgb(144, 141, 141); */
-  --var-bgcolor: rgb(248, 248, 248);
+  --var-bgcolor: hsl(0, 0%, 84%);
   /* --var-fontcolor: rgb(218, 212, 212); */
   --var-fontcolor: rgb(66, 63, 63);
 }
