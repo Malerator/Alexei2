@@ -409,7 +409,7 @@ h6 {
   .panel__zoom {
     width: 35px;
     height: 25px;
-    top: 12%;
+    top: 15%;
   }
   .panel__nav--down,
   .panel__nav--left-down,
@@ -478,7 +478,7 @@ h6 {
   h6 {
     font-size: 4.5vmin;
   }
-  /* .panel__zoom {
+  .panel__zoom {
     top: 15%;
-  } */
+  }
 }
