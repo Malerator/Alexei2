@@ -91,8 +91,6 @@ closeBtn.addEventListener("click", closeModal);
 popUp.addEventListener("click", closeModal);
 form.addEventListener("click", (event) => event.stopPropagation());
 
-// sendBtn.addEventListener("click", openModal2);
-
 function openModal() {
   popUp.style.display = "flex";
   // document.body.style.overflow = "hidden";
@@ -123,7 +121,6 @@ form.addEventListener("submit", function (el) {
   message += `<b>Пробег:  </b>${Math.round(this.run.value)}\n`;
   message += `<b>Год выпуска:  </b>${this.year.value}\n`;
   message += `<b>Состояние/способ связи: </b>${checkState}\n`;
-  // message += `<b>Имя:  </b>${this.fName.value}\n`;
   message += `<b>Телефон:  </b>${this.tel.value}`;
   axios
     .post(URL, {
@@ -138,6 +135,10 @@ form.addEventListener("submit", function (el) {
       this.run.value = "0";
       this.year.value = "0";
       this.tel.value = "";
+      let radio = document.getElementsByName("highload");
+      for (let i = 0; i < radio.length; i++) radio[i].checked = false;
+      let radio2 = document.getElementsByName("highload1");
+      for (let i = 0; i < radio2.length; i++) radio2[i].checked = false;
       openModal2();
     })
     .catch((err) => {})
