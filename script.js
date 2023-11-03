@@ -91,7 +91,7 @@ closeBtn.addEventListener("click", closeModal);
 popUp.addEventListener("click", closeModal);
 form.addEventListener("click", (event) => event.stopPropagation());
 
-sendBtn.addEventListener("click", openModal2);
+// sendBtn.addEventListener("click", openModal2);
 
 function openModal() {
   popUp.style.display = "flex";
@@ -104,18 +104,16 @@ function openModal2() {
 
 function closeModal() {
   popUp.style.display = "none";
-  // document.body.style.overflow = "initial";
 }
 
 function closeModal2() {
   a.style.display = "none";
-  form.submit();
 }
 
 form.addEventListener("submit", function (el) {
   el.preventDefault();
 
-  const checkState = [...document.querySelectorAll(".checkbox:checked")].map(
+  let checkState = [...document.querySelectorAll(".checkbox:checked")].map(
     (el) => el.value
   );
 
@@ -127,15 +125,25 @@ form.addEventListener("submit", function (el) {
   message += `<b>Состояние/способ связи: </b>${checkState}\n`;
   // message += `<b>Имя:  </b>${this.fName.value}\n`;
   message += `<b>Телефон:  </b>${this.tel.value}`;
-  axios.post(URL, {
-    chat_id: CHAT_ID,
-    parse_mode: "html",
-    text: message,
-  });
-  form.reset();
-  closeModal();
-  // form.submit();
+  axios
+    .post(URL, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: message,
+    })
+    .then((res) => {
+      closeModal();
+      this.model.value = "";
+      this.mark.value = "";
+      this.run.value = "0";
+      this.year.value = "0";
+      this.tel.value = "";
+      openModal2();
+    })
+    .catch((err) => {})
+    .finally(() => {});
 });
+
 ///////////////////////////////////////////модальное окно, форма-квиз, валидация////////////////////////////
 
 let currentTab = 0;
