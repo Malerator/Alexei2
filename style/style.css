@@ -227,7 +227,6 @@ h6 {
 .panel__nav--right {
   writing-mode: vertical-lr;
   text-orientation: upright;
-  transform: rotate(-90deg);
 }
 
 .panel__nav--up {
@@ -240,7 +239,7 @@ h6 {
   left: 1.5rem;
   top: 50%;
   transform: translateY(-50%) translateX(-100%);
-  transform-origin: top left;
+  /* transform-origin: top left; */
 }
 
 .panel__nav--left-top {
@@ -257,7 +256,7 @@ h6 {
   right: 1.5rem;
   top: 50%;
   transform: translateY(-50%) translateX(100%);
-  transform-origin: top right;
+  /* transform-origin: top right; */
 }
 
 .panel__nav--right-top {
@@ -287,8 +286,6 @@ h6 {
   color: #eea208;
   position: absolute;
   opacity: 1;
-  text-shadow: 0 0 3vmin #390ee8;
-  transition: 0.3s;
 }
 
 .panel__zoom {
