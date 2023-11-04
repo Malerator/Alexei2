@@ -77,7 +77,7 @@ const sendBtn = document.querySelector(".sendBtn");
 
 const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
 
-const CHAT_ID = "-100169583301";
+const CHAT_ID = "-1001695833016";
 
 const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
