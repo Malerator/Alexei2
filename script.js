@@ -77,7 +77,7 @@ const sendBtn = document.querySelector(".sendBtn");
 
 const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
 
-const CHAT_ID = "-1001695833016";
+const CHAT_ID = "-100169583301";
 
 const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
@@ -141,7 +141,11 @@ form.addEventListener("submit", function (el) {
       for (let i = 0; i < radio2.length; i++) radio2[i].checked = false;
       openModal2();
     })
-    .catch((err) => {})
+    .catch((err) => {
+      alert(
+        "Что-то пошло не так(((\nПерезагрузите страницу и попробуйте снова"
+      );
+    })
     .finally(() => {});
 });
 
