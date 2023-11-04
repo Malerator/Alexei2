@@ -71,7 +71,7 @@ img.src = "./images/close.svg";
 img.width = "20";
 img.height = "20";
 
-const a = document.querySelector(".tab2");
+const alertOk = document.querySelector(".tab2");
 
 const sendBtn = document.querySelector(".sendBtn");
 
@@ -96,16 +96,16 @@ function openModal() {
   // document.body.style.overflow = "hidden";
 }
 
-function openModal2() {
-  a.style.display = "flex";
+function openAlertOk() {
+  alertOk.style.display = "flex";
 }
 
 function closeModal() {
   popUp.style.display = "none";
 }
 
-function closeModal2() {
-  a.style.display = "none";
+function closeAlertOk() {
+  alertOk.style.display = "none";
 }
 
 form.addEventListener("submit", function (el) {
@@ -129,7 +129,6 @@ form.addEventListener("submit", function (el) {
       text: message,
     })
     .then((res) => {
-      closeModal();
       this.model.value = "";
       this.mark.value = "";
       this.run.value = "0";
@@ -139,7 +138,8 @@ form.addEventListener("submit", function (el) {
       for (let i = 0; i < radio.length; i++) radio[i].checked = false;
       let radio2 = document.getElementsByName("highload1");
       for (let i = 0; i < radio2.length; i++) radio2[i].checked = false;
-      openModal2();
+      closeModal();
+      openAlertOk();
     })
     .catch((err) => {
       alert(
